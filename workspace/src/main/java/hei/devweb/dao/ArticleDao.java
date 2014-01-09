@@ -1,5 +1,11 @@
 package hei.devweb.dao;
 
-public class ArticleDao {
+import hei.devweb.model.Article;
 
+import java.util.List;
+
+public interface ArticleDao {
+	
+	public List<Article> listerArticle();	
+	
 }
