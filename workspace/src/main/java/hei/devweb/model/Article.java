@@ -13,7 +13,7 @@ public class Article {
 	
 	/**** Contructeur(s) ****/
 	
-	public article(Integer id, String title, String description, Integer idAlbum, Integer idCategorie) {
+	public Article(Integer id, String title, String description, Integer idAlbum, Integer idCategorie) {
 		this.id = id;
 		this.title = title;
 		this.description = description;
