@@ -9,10 +9,13 @@
 	</head>
 
 	<body>
-		
+		<div class="carroussel">
 
+		</div>
+		<div class="choix-theme">
 
+		</div>
+		<div class="contact">
 
-
-
+		</div>
 	</body>

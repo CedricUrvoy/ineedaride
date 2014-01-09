@@ -1,5 +1,5 @@
 <header>
-	<nav class = navigation>
+	<nav class="navigation">
 		<div class="site-name">
 			<a href="index">NeedARide</a> 
 		</div>
