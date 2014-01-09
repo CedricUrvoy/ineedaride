@@ -1,6 +1,6 @@
 package hei.devweb.model;
 
-public class article {
+public class Article {
 	
 	/**** Declaration des variables ****/
 	
