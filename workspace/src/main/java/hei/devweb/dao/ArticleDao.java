@@ -8,4 +8,5 @@ public interface ArticleDao {
 	
 	public List<Article> listerArticle();	
 	
+	public void ajouterArticle(Article article);
 }
