@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -9,6 +10,7 @@
 	</head>
 
 	<body>
+		<jsp:include page="menu.jsp" />
 		<div class="carroussel">
 			<img src="" alt="" title=""/>
 			<h1>Ski & Snow</h1>
