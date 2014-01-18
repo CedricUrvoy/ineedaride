@@ -1,4 +1,119 @@
-body
-{
-	back
+@charset "utf-8";
+/**** CSS Document ****/
+
+/**** Fonts ****/
+
+@font-face {
+    font-family: "bariol";
+    src: url('../fonts/bariol_bold-webfont.eot');
+    src: url('../fonts/bariol_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bariol_bold-webfont.woff') format('woff'),
+         url('../fonts/bariol_bold-webfont.ttf') format('truetype'),
+         url('../fonts/bariol_bold-webfont.svg#bariol_boldbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "../fonts/bariol";
+    src: url('../fonts/bariol_bold_italic-webfont.eot');
+    src: url('../fonts/bariol_bold_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bariol_bold_italic-webfont.woff') format('woff'),
+         url('../fonts/bariol_bold_italic-webfont.ttf') format('truetype'),
+         url('../fonts/bariol_bold_italic-webfont.svg#bariol_boldbold_italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: "bariol";
+    src: url('../fonts/bariol_light-webfont.eot');
+    src: url('../fonts/bariol_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bariol_light-webfont.woff') format('woff'),
+         url('../fonts/bariol_light-webfont.ttf') format('truetype'),
+         url('../fonts/bariol_light-webfont.svg#bariol_lightlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "bariol";
+    src: url('../fonts/bariol_light_italic-webfont.eot');
+    src: url('../fonts/bariol_light_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bariol_light_italic-webfont.woff') format('woff'),
+         url('../fonts/bariol_light_italic-webfont.ttf') format('truetype'),
+         url('../fonts/bariol_light_italic-webfont.svg#bariollight_italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/**** Body ****/
+
+body{
+	background-color: #FFF;
+}
+
+/**** Navigation ****/
+
+header{
+	font-size: 20px;
+	height: 10%;
+	margin-top: 1%;	
+	font-family: "bariol",Arial, sans-serif;
+	font-weight: bold;
+	font-style: normal;
+}
+.navigation{
+	margin-bottom:1%;
+	width: 100%;
+	height: 100%;
+}
+.site-name{
+	margin-left:10%;
+	margin-right: 35%;	
+	font-style: italic;
+	float: left;
+}
+.site-name a{
+	color:#44c0c2;
+	text-decoration: none;
+}
+.menu ul{
+	list-style-type: none;
+	
+}
+.menu li{
+	display:inline-block;
+	margin: 0% 5%;
+}
+
+.menu a{
+	color:#000; 
+	text-decoration:none;
+}
+.menu a:hover{
+	color: #44c0c2;
+	text-decoration:none;
+	font-style: italic;
+}
+
+.menu .active{
+	border-bottom: 1px solid #44c0c2
+}
+
+/**** Page Blog ****/
+
+
+.bloc_img img{
+	width: 100%;
+	height: 30%;
+}
+.bloc_img figcaption{
+	font-family: "bariol",Arial, sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	color:#FFF;
+	margin:auto;
+	position:relative; 
+	top:-2em;
+	width:10%;
+	margin:auto;
+	font-size:350%;
 }

@@ -11,6 +11,10 @@
 
 	<body>
 	<jsp:include page="header.jsp" />
+		<figure class = bloc_img>
+			<img src="img/blog/pres/blog_ski.jpg" alt="Blog" title="Blog">
+			<figcaption>SKI</figcaption>
+		</figure>
 		<article>
 			<div class="bloc_date">
 	           2 Janv 2014 

@@ -3,10 +3,10 @@
 		<div class="site-name">
 			<a href="index">NeedARide</a> 
 		</div>
-		<div>
-			<ul class="menu">
+		<div class="menu">
+			<ul>
 				<li><a href="index">Home</a></li>
-				<li><a href="blog">Blog</a></li>
+				<li class="active"><a href="blog">Blog</a></li>
 				<li><a href="index/#contact">Contact</a></li>
 			</ul>
 		</div>
