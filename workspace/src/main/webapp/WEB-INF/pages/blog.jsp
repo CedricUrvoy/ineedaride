@@ -10,7 +10,7 @@
 	</head>
 
 	<body>
-	<jsp:include page="menu.jsp" />
+	<jsp:include page="header.jsp" />
 		<article>
 			<div class="bloc_date">
 	           2 Janv 2014 
