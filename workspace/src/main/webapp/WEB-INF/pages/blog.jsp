@@ -11,20 +11,20 @@
 
 	<body>
 	<jsp:include page="header.jsp" />
-		<figure class = bloc_img>
+		<figure class = bloc-img>
 			<img src="img/blog/pres/blog_ski.jpg" alt="Blog" title="Blog">
 			<figcaption>SKI</figcaption>
 		</figure>
-		<article>
-			<div class="bloc_date">
+		<article class="pres-article">
+			<span class="bloc-date">
 	           2 Janv 2014 
-	        </div>
+	        </span>
 	        <div class="text">
 	            <h3>Titre</h3>
 	            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 	            <h4><a href="article>" title="article" target="_self">Lire l'article</a></h4>
 	        </div>
-	        <div class="bloc_infos">
+	        <div class="bloc-infos">
 	        	<div class="infos"> By Cedpilou Categorie :<a href="ski">Ski</a>	
                 </div>
 	        </div>
@@ -34,7 +34,7 @@
 			</div>
 			<div class="categorie">
 			</div>
-			<div class="recent_post">
+			<div class="recent-post">
 			</div>
 			<div class="tags">
 			</div>

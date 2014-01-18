@@ -101,11 +101,11 @@ header{
 /**** Page Blog ****/
 
 
-.bloc_img img{
+.bloc-img img{
 	width: 100%;
 	height: 30%;
 }
-.bloc_img figcaption{
+.bloc-img figcaption{
 	font-family: "bariol",Arial, sans-serif;
 	font-weight: bold;
 	font-style: normal;
@@ -116,4 +116,14 @@ header{
 	width:10%;
 	margin:auto;
 	font-size:350%;
+}
+
+.pres-article{
+	width:70%;
+	margin:auto;
+}
+
+.pres-article .bloc-date{
+	witdth:10%;
+	background-color: #44c0c2;
 }
