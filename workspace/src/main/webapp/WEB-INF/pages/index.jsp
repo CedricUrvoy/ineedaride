@@ -38,27 +38,32 @@
 					<a href="blog">	 Voir ce thème </a>		
 				</li>				
 		</div>
-		<div class="contact" id="contact">
+		<div class="contactGlobal" id="contact">
 			<h1>Contact</h1>
-			<aside class="infosContact">
-				<h3>Rester en contact</h3>
-				<ul class="reseaux">
-						<li class="reseauSociaux"><a href="http://www.facebook.com"><img src="img/blog/divers/Facebook.png" alt="facebook" title="facebook"/></a></li>
-						<li class="reseauSociaux"><a href="http://www.twitter.com"><img src="img/blog/divers/Twitter.png" alt="twitter" title="twitter"/></a></li>
-						<li class="reseauSociaux"><a href="www.google.com"><img src="img/blog/divers/Google+.png" alt="google" title="google"/></a></li>
-				</ul>
-			</aside>
-			<form action="mailto:cedric.urvoy@hei.fr" method="post" id="formContact" enctype="text/plain">
-                    <fieldset> 
-	                    	<input  class="chpText" type="text" name="titre" id="nom" required placeholder="Nom" />
-	                    	<input class="chpText" type="text" name="titre" id="prenom" required placeholder="Prenom" />
-	                    <div> 
-	                        <textarea id="message" name="message" rows="10" cols="50" required placeholder="Ecrivez votre message"></textarea>
-	                    </div> 
-	                    <div>
-	                    	<input id="boutonEnvoyer" type="submit" value="Envoyer" />
-	                    </div>
-                    </fieldset>
-            </form>
+			<div class="contact">
+				<aside id="infosContact">
+					<h3>Rester en contact</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+					<ul class="reseaux">
+							<li class="reseauSociaux"><a href="http://www.facebook.com"><img src="img/blog/divers/Facebook.png" alt="facebook" title="facebook"/></a></li>
+							<li class="reseauSociaux"><a href="http://www.twitter.com"><img src="img/blog/divers/Twitter.png" alt="twitter" title="twitter"/></a></li>
+							<li class="reseauSociaux"><a href="www.google.com"><img src="img/blog/divers/Google+.png" alt="google" title="google"/></a></li>
+					</ul>
+					<p> Adresse email : cedric.urvoy@hei.fr </p>
+					<p> Tel : 06 . 14 . 14 . 74 . 30  </p>
+				</aside>
+				<form action="mailto:cedric.urvoy@hei.fr" method="post" id="formContact" enctype="text/plain">
+	                    <fieldset> 
+		                    	<input  class="champText" type="text" name="titre" id="nom" required placeholder="   Nom" />
+		                    	<input class="champText" type="text" name="titre" id="prenom" required placeholder="   Prenom" />
+		                    <div> 
+		                        <textarea class="champText" id="message" name="message" rows="10" cols="50" required placeholder="   Message"></textarea>
+		                    </div> 
+		                    <div>
+		                    	<input id="boutonEnvoyer" type="submit" value="Envoyer" />
+		                    </div>
+	                    </fieldset>
+	            </form>
+            </div>
 		</div>
 	</body>
