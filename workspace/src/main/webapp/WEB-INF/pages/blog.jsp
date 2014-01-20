@@ -23,44 +23,29 @@
 		        <div class="presentation">
 		            <h3>Lorem Ipsum is simply dummy text of the printing .</h3>
 		            <img src="img/blog/articles/apohutch/apohutch.jpg" alt="apo hutch" title="apo hutch"/>
-		            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-		            <h4><a href="article>" title="article" target="_self">Lire l'article</a></h4>
-		        </div>
-		        <div class="bloc-infos">
-		        	<div class="infos"> By Cedpilou Categorie :<a href="ski">Ski</a>	
-	                </div>
-		        </div>
-			</article>
-			<article class="pres-article">
-				<aside class="bloc-date">
-		           <p>22 Janv 2014</p>
-		        </aside>
-		        <div class="presentation">
-		            <h3>Lorem Ipsum is simply dummy text of the printing .</h3>
-		            <img src="img/blog/articles/apohutch/apohutch.jpg" alt="apo hutch" title="apo hutch"/>
-		            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-		            <h4><a href="article>" title="article" target="_self">Lire l'article</a></h4>
-		        </div>
-		        <div class="bloc-infos">
-		        	<div class="infos"> By Cedpilou Categorie :<a href="ski">Ski</a>	
-	                </div>
-		        </div>
-			</article>
-			<article class="pres-article">
-				<aside class="bloc-date">
-		           <p>22 Janv 2014</p>
-		        </aside>
-		        <div class="presentation">
-		            <h3>Lorem Ipsum is simply dummy text of the printing .</h3>
-		            <img src="img/blog/articles/apohutch/apohutch.jpg" alt="apo hutch" title="apo hutch"/>
-		            <span class="pres">
+		            <div class="pres">
 			            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 			            <h4><a href="article>" title="article" target="_self">Lire l'article</a></h4>
-		            </span>
+		            </div>
 		        </div>
 		        <div class="bloc-infos">
-		        	<div class="infos"> By Cedpilou Categorie :<a href="ski">Ski</a>	
-	                </div>
+		        	<p class="infosAuthor"> By Cedpilou</p> <p class="infosCategorie">Categorie : <a href="ski">Ski</a></p>
+		        </div>
+			</article>
+			<article class="pres-article">
+				<aside class="bloc-date">
+		           <p>22 Janv 2014</p>
+		        </aside>
+		        <div class="presentation">
+		            <h3>Lorem Ipsum is simply dummy text of the printing .</h3>
+		            <img src="img/blog/articles/sessionn1/sessionn1.jpg" alt="apo hutch" title="apo hutch"/>
+		            <div class="pres">
+			            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+			            <h4><a href="article>" title="article" target="_self">Lire l'article</a></h4>
+		            </div>
+		        </div>
+		        <div class="bloc-infos">
+		        	<p class="infosAuthor"> By Cedpilou</p> <p class="infosCategorie">Categorie : <a href="ski">Ski</a></p>
 		        </div>
 			</article>
 			<article class="pres-article">
@@ -70,24 +55,58 @@
 		        <div class="presentation">
 		            <h3>Lorem Ipsum is simply dummy text of the printing .</h3>
 		            <img src="img/blog/articles/apohutch/apohutch.jpg" alt="apo hutch" title="apo hutch"/>
-		            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-		            <h4><a href="article>" title="article" target="_self">Lire l'article</a></h4>
+		            <div class="pres">
+			            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+			            <h4><a href="article>" title="article" target="_self">Lire l'article</a></h4>
+		            </div>
 		        </div>
 		        <div class="bloc-infos">
-		        	<div class="infos"> By Cedpilou Categorie :<a href="ski">Ski</a>	
-	                </div>
+		        	<p class="infosAuthor"> By Cedpilou</p> <p class="infosCategorie">Categorie : <a href="ski">Ski</a></p>
+		        </div>
+			</article>
+			<article class="pres-article">
+				<aside class="bloc-date">
+		           <p>22 Janv 2014</p>
+		        </aside>
+		        <div class="presentation">
+		            <h3>Lorem Ipsum is simply dummy text of the printing .</h3>
+		            <img src="img/blog/articles/apohutch/apohutch.jpg" alt="apo hutch" title="apo hutch"/>
+		            <div class="pres">
+			            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+			            <h4><a href="article>" title="article" target="_self">Lire l'article</a></h4>
+		            </div>
+		        </div>
+		        <div class="bloc-infos">
+		        	<p class="infosAuthor"> By Cedpilou</p> <p class="infosCategorie">Categorie : <a href="ski">Ski</a></p>
 		        </div>
 			</article>
 		</div>
 		<aside class="sidebar">
 			<div class="recherche">
-				
+				<form method="post" action="recherche" class="form-horizontal">
+					<input type="text" name="recherche" id="recherche" placeholder="   Search">
+				</form>
+			</div>
+			<div class="follow">
+				<h2>Follow Us</h2>
+				<ul class="reseaux">
+					<li class="reseauSociaux"><a href="http://www.facebook.com"><img src="img/blog/divers/Facebook.png" alt="facebook" title="facebook"/></a></li>
+					<li class="reseauSociaux"><a href="http://www.twitter.com"><img src="img/blog/divers/Twitter.png" alt="twitter" title="twitter"/></a></li>
+					<li class="reseauSociaux"><a href="www.google.com"><img src="img/blog/divers/Google+.png" alt="google" title="google"/></a></li>
+				</ul>
+				<form method="post" action="inscription" class="inscription">
+					<input type="text" name="inscription" id="emailInscription" placeholder="Email">
+					<input class="boutonInscription" type="submit" value="S'incrire">
+				</form>
 			</div>
 			<div class="categorie">
-			</div>
-			<div class="recent-post">
-			</div>
-			<div class="tags">
+				<h2>Categories</h2>
+				<ul>
+					<li class="activeCategorie">SKI</li>
+					<li>SNOW</li>
+					<li>FIXIE</li>
+					<li>KYTE</li>
+				</ul>
 			</div>
 		</aside>
 	</body>
