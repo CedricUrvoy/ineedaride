@@ -221,7 +221,7 @@ header{
 }
 .bloc-infos p{
 	display: inline-block;
-	margin-left:15%;
+	margin-left:7%;
 	margin-right:5%;
 	line-height: 30px;
 	height: 30px;
@@ -229,6 +229,9 @@ header{
 	font-weight: normal;
 	font-style: normal;
 	font-size:1em;
+}
+.bloc-infos p:last-child{
+	margin-right: 0%;
 }
 .bloc-infos a{
 	text-decoration: none;

@@ -31,6 +31,7 @@
 		        <div class="bloc-infos">
 		        	<p class="infosAuthor"> By : <a href="cedpilou">Cedpilou</a></p>
 		        	<p class="infosCategorie">Categorie : <a href="ski">Ski</a></p>
+		        	<p><a href="comments">[25] Commentaires	</a></p>
 		        	<a href="http://www.facebook.com"><img src="img/blog/divers/PartagerFacebook.png" alt="facebook" title="facebook"/></a>
 					<a href="http://www.twitter.com"><img src="img/blog/divers/PartagerTwitter.png" alt="twitter" title="twiter"/></a>		
 		        </div>
@@ -88,7 +89,7 @@
 					<li class="reseauSociaux"><a href="www.google.com"><img src="img/blog/divers/Google+.png" alt="google" title="google"/></a></li>
 				</ul>
 				<form method="post" action="inscription" class="inscription">
-					<input type="text" name="inscription" id="emailInscription" placeholder="Email">
+					<input type="text" name="inscription" id="emailInscription" placeholder="   Email">
 					<input class="boutonInscription" type="submit" value="S'incrire">
 				</form>
 			</div>
