@@ -11,6 +11,10 @@
 		<servlet-name>Blog</servlet-name>
 		<servlet-class>hei.devweb.controllers.BlogServlet</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>Article</servlet-name>
+		<servlet-class>hei.devweb.controllers.ArticleServlet</servlet-class>
+	</servlet>
 
 	
 	<servlet-mapping>
@@ -20,6 +24,10 @@
 	<servlet-mapping>
 		<servlet-name>Blog</servlet-name>
 		<url-pattern>/blog</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Article</servlet-name>
+		<url-pattern>/article</url-pattern>
 	</servlet-mapping>
 
 	
