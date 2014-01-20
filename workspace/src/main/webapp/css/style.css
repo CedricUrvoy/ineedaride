@@ -186,9 +186,30 @@ header{
 	border-radius: 3px;
 	/*border: 1px solid #000;*/
 }
-.presentation .pres{
+.pres{
 	margin-left:245px;
 	margin-top:3%;
+	font-family: Arial, sans-serif;
+	font-weight: lighter;
+	font-style: normal;
+	font-size:0.9em;
+	color:#414a5a;
+	text-align:justify; 
+	line-height: 20px;
+}
+.pres p{
+	min-width:300px;
+	max-height: 190px;
+	overflow: auto;
+}
+.pres a{
+	font-family: Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size:1.2em;
+	line-height:25px;
+	text-decoration: none;
+	color: #44c0c2;
 }
 .bloc-infos{
 	position: absolute;
@@ -200,11 +221,25 @@ header{
 }
 .bloc-infos p{
 	display: inline-block;
-	margin-top:7px;
-	margin-left:10%;
-	margin-right:20%;
+	margin-left:15%;
+	margin-right:5%;
+	line-height: 30px;
+	height: 30px;
+	font-family:'bariol' ,Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size:1em;
 }
-
+.bloc-infos a{
+	text-decoration: none;
+	color:#000;
+}
+.bloc-infos img{
+	width: 30px;
+	height: 30px;
+	margin-right: 2%;
+	float: right;
+}
 
 
 /**** SideBar ****/
@@ -279,5 +314,34 @@ header{
 	font-size:1.1em;
 	margin-top:20px;
 	margin-bottom:20px;
-	margin-left:10%;
+}
+.categorie li:first-letter{
+	font-weight: bold;
+	font-size:1.2em;
+	color:#44c0c2;
+	margin-right: 10%;
+}
+.categorie a{
+
+	text-decoration: none;
+	color:#414a5a;
+}
+.categorie a:hover{
+
+	color: #44c0c2;
+	text-decoration:none;
+	font-style: italic;
+}
+.activeCategorie{
+	background-color: #e9e9e9;
+	color:#FFF;
+	margin-left: 3%;
+	padding-bottom: 2px;
+	padding-left: 2%;
+	width: 60%;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
 }

@@ -25,27 +25,14 @@
 		            <img src="img/blog/articles/apohutch/apohutch.jpg" alt="apo hutch" title="apo hutch"/>
 		            <div class="pres">
 			            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-			            <h4><a href="article>" title="article" target="_self">Lire l'article</a></h4>
+			            <a href="article" title="article" target="_self">Lire l'article</a>
 		            </div>
 		        </div>
 		        <div class="bloc-infos">
-		        	<p class="infosAuthor"> By Cedpilou</p> <p class="infosCategorie">Categorie : <a href="ski">Ski</a></p>
-		        </div>
-			</article>
-			<article class="pres-article">
-				<aside class="bloc-date">
-		           <p>22 Janv 2014</p>
-		        </aside>
-		        <div class="presentation">
-		            <h3>Lorem Ipsum is simply dummy text of the printing .</h3>
-		            <img src="img/blog/articles/sessionn1/sessionn1.jpg" alt="apo hutch" title="apo hutch"/>
-		            <div class="pres">
-			            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-			            <h4><a href="article>" title="article" target="_self">Lire l'article</a></h4>
-		            </div>
-		        </div>
-		        <div class="bloc-infos">
-		        	<p class="infosAuthor"> By Cedpilou</p> <p class="infosCategorie">Categorie : <a href="ski">Ski</a></p>
+		        	<p class="infosAuthor"> By : <a href="cedpilou">Cedpilou</a></p>
+		        	<p class="infosCategorie">Categorie : <a href="ski">Ski</a></p>
+		        	<a href="http://www.facebook.com"><img src="img/blog/divers/PartagerFacebook.png" alt="facebook" title="facebook"/></a>
+					<a href="http://www.twitter.com"><img src="img/blog/divers/PartagerTwitter.png" alt="twitter" title="twiter"/></a>		
 		        </div>
 			</article>
 			<article class="pres-article">
@@ -57,11 +44,14 @@
 		            <img src="img/blog/articles/apohutch/apohutch.jpg" alt="apo hutch" title="apo hutch"/>
 		            <div class="pres">
 			            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-			            <h4><a href="article>" title="article" target="_self">Lire l'article</a></h4>
+			            <a href="article" title="article" target="_self">Lire l'article</a>
 		            </div>
 		        </div>
 		        <div class="bloc-infos">
-		        	<p class="infosAuthor"> By Cedpilou</p> <p class="infosCategorie">Categorie : <a href="ski">Ski</a></p>
+		        	<p class="infosAuthor"> By : <a href="cedpilou">Cedpilou</a></p>
+		        	<p class="infosCategorie">Categorie : <a href="ski">Ski</a></p>
+		        	<a href="http://www.facebook.com"><img src="img/blog/divers/PartagerFacebook.png" alt="facebook" title="facebook"/></a>
+					<a href="http://www.twitter.com"><img src="img/blog/divers/PartagerTwitter.png" alt="twitter" title="twiter"/></a>		
 		        </div>
 			</article>
 			<article class="pres-article">
@@ -73,11 +63,14 @@
 		            <img src="img/blog/articles/apohutch/apohutch.jpg" alt="apo hutch" title="apo hutch"/>
 		            <div class="pres">
 			            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-			            <h4><a href="article>" title="article" target="_self">Lire l'article</a></h4>
+			            <a href="article" title="article" target="_self">Lire l'article ></a>
 		            </div>
 		        </div>
 		        <div class="bloc-infos">
-		        	<p class="infosAuthor"> By Cedpilou</p> <p class="infosCategorie">Categorie : <a href="ski">Ski</a></p>
+		        	<p class="infosAuthor"> By : <a href="cedpilou">Cedpilou</a></p>
+		        	<p class="infosCategorie">Categorie : <a href="ski">Ski</a></p>
+		        	<a href="http://www.facebook.com"><img src="img/blog/divers/PartagerFacebook.png" alt="facebook" title="facebook"/></a>
+					<a href="http://www.twitter.com"><img src="img/blog/divers/PartagerTwitter.png" alt="twitter" title="twiter"/></a>		
 		        </div>
 			</article>
 		</div>
@@ -102,10 +95,10 @@
 			<div class="categorie">
 				<h2>Categories</h2>
 				<ul>
-					<li class="activeCategorie">SKI</li>
-					<li>SNOW</li>
-					<li>FIXIE</li>
-					<li>KYTE</li>
+					<li class="activeCategorie">><a href="ski">SKI</a></li>
+					<li>><a href="snow">SNOW</a></li>
+					<li>><a href="fixie">FIXIE</a></li>
+					<li>><a href="kyte">KYTE</a></li>
 				</ul>
 			</div>
 		</aside>
