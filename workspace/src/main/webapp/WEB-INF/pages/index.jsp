@@ -10,48 +10,53 @@
 	</head>
 
 	<body>
-		<jsp:include page="menu.jsp" />
+		<jsp:include page="header.jsp" />
 		<div class="carroussel">
-			<img src="" alt="" title=""/>
-			<h1>Ski & Snow</h1>
-			<p>Tout sur le ski et le snow : Test, video ...</p>
-			<a href="blog"> Voir ce thème </a>		
+			<img src="img/blog/pres/SkiCarroussel.jpg" alt="Ski" title="Ski"/>
+			<div class="textImage">
+				<h1>Ski & Snow</h1>
+			</div>	
 		</div>
 		<div class="choix-theme">
 			<ul>
 				<li>
+					<img src="img/blog/pres/Ski.png" alt="Ski" title="Ski"/>
 					<h1>Ski & Snow</h1>
 					<p>Tout sur le ski et le snow : Test, video ...</p>
 					<a href="blog">	 Voir ce thème </a>		
 				</li>
 				<li>
+					<img src="img/blog/pres/Fixie.png" alt="Ski" title="Ski"/>
 					<h1>Fixie</h1>
-					<p>Tout sur le fixie : Test, video ...</p>
+					<p>Tout sur le fixie et le singlespeed : Test, video ...</p>
 					<a href="blog">	 Voir ce thème </a>		
 				</li>
 				<li>
-					<h1>Kyte & Surf</h1>
+					<img src="img/blog/pres/Kite.png" alt="Ski" title="Ski"/>
+					<h1>Kite & Surf</h1>
 					<p>Tout sur le kyte et le surf : Test, video ...</p>
 					<a href="blog">	 Voir ce thème </a>		
 				</li>				
 		</div>
 		<div class="contact" id="contact">
-			<form action="mailto:cedric.urvoy@hei.fr" method="post" id="formfilm" enctype="text/plain">
+			<h1>Contact</h1>
+			<aside class="infosContact">
+				<h3>Rester en contact</h3>
+				<ul class="reseaux">
+						<li class="reseauSociaux"><a href="http://www.facebook.com"><img src="img/blog/divers/Facebook.png" alt="facebook" title="facebook"/></a></li>
+						<li class="reseauSociaux"><a href="http://www.twitter.com"><img src="img/blog/divers/Twitter.png" alt="twitter" title="twitter"/></a></li>
+						<li class="reseauSociaux"><a href="www.google.com"><img src="img/blog/divers/Google+.png" alt="google" title="google"/></a></li>
+				</ul>
+			</aside>
+			<form action="mailto:cedric.urvoy@hei.fr" method="post" id="formContact" enctype="text/plain">
                     <fieldset> 
-	                    <div>
-	                    	<label for="titre">Nom</label> 
-	                    	<input type="text" name="titre" id="titre" required placeholder="Nom" />
-	                    </div> 
-						<div>
-							<label for="titre">Prenom</label>
-	                    	<input type="text" name="titre" id="titre" required placeholder="Prenom" />
-	                    </div>
-	                    <div>
-	                    	<label for="message">Message  :</label><br/>
+	                    	<input  class="chpText" type="text" name="titre" id="nom" required placeholder="Nom" />
+	                    	<input class="chpText" type="text" name="titre" id="prenom" required placeholder="Prenom" />
+	                    <div> 
 	                        <textarea id="message" name="message" rows="10" cols="50" required placeholder="Ecrivez votre message"></textarea>
-	                    </div>
+	                    </div> 
 	                    <div>
-	                    	<input type="submit" value="Envoyer" />
+	                    	<input id="boutonEnvoyer" type="submit" value="Envoyer" />
 	                    </div>
                     </fieldset>
             </form>

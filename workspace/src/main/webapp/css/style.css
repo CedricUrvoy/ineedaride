@@ -98,6 +98,121 @@ header{
 	border-bottom: 1px solid #44c0c2
 }
 
+/**** Home ****/
+.carroussel img{
+	width:100%;
+	max-height: 60%;
+}
+.textImage{
+	font-family: "bariol",Arial, sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	color:#FFF;
+	position:relative; 
+	top:-5em;
+	font-size:250%;
+	text-align: center;
+}
+
+
+.choix-theme li{
+	display: inline-block;
+	width: 150px;
+	margin-left: 10%;	
+}
+.choix-theme li:first-child{
+	margin-left:25%;
+}
+.choix-theme img{
+	width :100%;	
+}
+.choix-theme h1{
+	text-align: center;	
+	font-family: "bariol",Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size:1.5em;
+	margin-bottom:10px;
+	color:#414a5a;
+}
+.choix-theme p{
+	width:140%;
+	margin-left:-20%;
+	text-align: center;
+	font-family: Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	margin-bottom:20px;
+	color:#414a5a;
+}
+.choix-theme a{
+	padding: 5px 10px;	
+	margin-left:10%;
+	
+	font-family: Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	text-align: center;
+	color:#FFF;
+	
+	background-color:#44c0c2;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	
+}
+
+/**** Contact ****/
+
+.contact{
+	margin-top:100px;
+	background: black url(../img/blog/divers/BackGroundContact.jpg) no-repeat fixed; 
+	height: 450px;
+	padding-top: 50px;
+	
+	font-family: "bariol",Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+.contact h1{
+
+	text-align: center;	
+	font-size:1.7em;
+	margin-bottom:10px;
+	color:#FFF;
+}
+
+.contact h3{
+	font-size:1.2em;
+	margin-bottom:10px;
+	color:#FFF;
+}
+
+.formContact{
+	
+}
+
+#boutonEnvoyer{
+	width:100px;
+	margin-top:10px;
+	margin-left: 15%; 
+	height: 40px;
+	background-color: #44c0c2;
+	font-family: "bariol",Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size:1.1em;
+	color: #FFF;
+	border: 1px solid #44c0c2; 
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
 /**** Page Blog ****/
 
 
