@@ -261,7 +261,6 @@ header{
 	min-height:1010px; 
 	float:left; 
 	display:block;
-	display:block;
 }
 .pres-article{
 	position:relative; 
@@ -278,7 +277,7 @@ header{
 	margin-top: 0%;
 }
 
-.pres-article .bloc-date{
+.bloc-date{
 	float:left;
 	width:8%;
 	height:30%;
@@ -290,7 +289,7 @@ header{
 	-o-border-radius: 5px;
 	border-radius: 5px;
 }
-.pres-article .bloc-date p{
+.bloc-date p{
 	text-align:center;
 	word-wrap: break-word;
 	font-family: "bariol",Arial, sans-serif;
@@ -299,7 +298,7 @@ header{
 	font-size:1.3em;
 	color: #FFF;
 }
-.pres-article .bloc-date p:first-line{
+.bloc-date p:first-line{
 	font-size:1.7em;
 }
 .presentation{
@@ -381,6 +380,69 @@ header{
 	margin-right: 2%;
 	float: right;
 }
+
+/**** Article ****/
+
+.article{
+	width:70%; 
+	min-height:1010px; 
+	float:left; 
+	display:block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bloc-infos-article{
+	width: 100%;
+	height: 30px;
+	border-top: 1px solid #44c0c2;
+	border-bottom: 1px solid #44c0c2;;
+}
+.bloc-infos-article p{
+	display: inline-block;
+	margin-left:7%;
+	margin-right:5%;
+	line-height: 30px;
+	height: 30px;
+	font-family:'bariol' ,Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size:1em;
+}
+.bloc-infos-article p:last-child{
+	margin-right: 0%;
+}
+.bloc-infos-article a{
+	text-decoration: none;
+	color:#000;
+}
+.bloc-infos-article img{
+	width: 30px;
+	height: 30px;
+	margin-right: 2%;
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /**** SideBar ****/

@@ -1,5 +1,7 @@
 package hei.devweb.model;
 
+import java.util.Date;
+
 public class Article {
 	
 	/**** Declaration des variables ****/
@@ -7,17 +9,18 @@ public class Article {
 	private Integer id;
 	private String title;
 	private String description;
-	
-	private Integer idAlbum;
+	private Date date;
+	private String image;
 	private Integer idCategorie;
 	
 	/**** Contructeur(s) ****/
 	
-	public Article(Integer id, String title, String description, Integer idAlbum, Integer idCategorie) {
+	public Article(Integer id, String title, String description, String image, Date date, Integer idCategorie) {
 		this.id = id;
 		this.title = title;
 		this.description = description;
-		this.idAlbum = idAlbum;
+		this.image = image;
+		this.date = date;
 		this.idCategorie = idCategorie;
 	}
 	
@@ -50,12 +53,12 @@ public class Article {
 		this.description = description;
 	}
 
-	public Integer getIdAlbum() {
-		return idAlbum;
+	public Date getDate() {
+		return date;
 	}
 
-	public void setIdAlbum(Integer idAlbum) {
-		this.idAlbum = idAlbum;
+	public void setDate(Date date) {
+		this.date = date;
 	}
 
 	public Integer getIdCategorie() {
@@ -64,6 +67,14 @@ public class Article {
 
 	public void setIdCategorie(Integer idCategorie) {
 		this.idCategorie = idCategorie;
+	}
+
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
 	}
 
 	

@@ -12,7 +12,7 @@
 	<body>
 		<jsp:include page="header.jsp" />
 		<figure class = bloc-img>
-			<img src="img/blog/pres/blog_ski.jpg" alt="Blog" title="Blog"/>
+			<img src="img/blog/pres/SkiBlog.jpg" alt="Blog" title="Blog"/>
 			<figcaption>SKI</figcaption>
 		</figure>
 		<div class="article">
@@ -35,6 +35,16 @@
 			            </div>
 			        </div> 
 			</article>
+		</div>
+		<form action="ajouterCommentaire" method="post" id="formCommentaire" enctype="text/plain">
+            <fieldset> 
+             	<input  class="commentaire" type="text" name="titre" id="nom" required placeholder="   Nom" />
+                 <textarea class="commentaire" id="message" name="message" rows="10" cols="50" required placeholder="Message"></textarea>
+            </fieldset>
+	    </form>
+		<div class="Commentaire">
+			<h4 class="nom">Cedpilou</h4>
+			<p>Lorem Ipsum is simply dummy text of the printing .</p>
 		</div>
 		<jsp:include page="sidebar.jsp" />
 	</body>
