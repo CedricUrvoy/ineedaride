@@ -1,6 +1,9 @@
 package hei.devweb.controllers;
 
+import hei.devweb.metier.CategorieManager;
+import hei.devweb.model.Categorie;
 import java.io.IOException;
+import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -18,6 +21,9 @@ public class HomeServlet extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
+		
+		List<Categorie> categories = CategorieManager.getInstance().listerCategorie();
+		req.setAttribute("categories", categories);	
 		
 	RequestDispatcher view = req.getRequestDispatcher("WEB-INF/pages/index.jsp");
 	view.forward(req, resp);

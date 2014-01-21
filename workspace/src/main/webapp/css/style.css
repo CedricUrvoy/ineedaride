@@ -114,8 +114,6 @@ header{
 	font-size:250%;
 	text-align: center;
 }
-
-
 .choix-theme li{
 	display: inline-block;
 	width: 150px;
@@ -162,8 +160,7 @@ header{
 	-moz-border-radius: 5px;
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
-	border-radius: 5px;
-	
+	border-radius: 5px;	
 }
 
 /**** Contact ****/
