@@ -1,3 +1,5 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -19,24 +21,14 @@
 		</div>
 		<div class="choix-theme">
 			<ul>
-				<li>
-					<img src="img/blog/pres/Ski.png" alt="Ski" title="Ski"/>
-					<h1>Ski & Snow</h1>
-					<p>Tout sur le ski et le snow : Test, video ...</p>
-					<a href="blog">	 Voir ce thème </a>		
-				</li>
-				<li>
-					<img src="img/blog/pres/Fixie.png" alt="Ski" title="Ski"/>
-					<h1>Fixie</h1>
-					<p>Tout sur le fixie et le singlespeed : Test, video ...</p>
-					<a href="blog">	 Voir ce thème </a>		
-				</li>
-				<li>
-					<img src="img/blog/pres/Kite.png" alt="Ski" title="Ski"/>
-					<h1>Kite & Surf</h1>
-					<p>Tout sur le kyte et le surf : Test, video ...</p>
-					<a href="blog">	 Voir ce thème </a>		
-				</li>				
+				<c:forEach var="categorie" items="${categories}">
+					<li>
+						<img src="${categorie.srcImgCat}" alt="${categorie.libelle}" title="${categorie.libelle}"/>
+						<h1>${categorie.libelle}</h1>
+						<p>${categorie.text}</p>
+						<a href="blog?${categorie.id}">	 Voir ce thème </a>		
+					</li>
+				</c:forEach>		
 		</div>
 		<div class="contactGlobal" id="contact">
 			<h1>Contact</h1>

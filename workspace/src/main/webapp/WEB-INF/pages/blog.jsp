@@ -12,7 +12,7 @@
 	<body>
 	<jsp:include page="header.jsp" />
 		<figure class = bloc-img>
-			<img src="img/blog/pres/blog_ski.jpg" alt="Blog" title="Blog"/>
+			<img src="img/blog/pres/SkiBlog.jpg" alt="Blog" title="Blog"/>
 			<figcaption>SKI</figcaption>
 		</figure>
 		<div class="articles">

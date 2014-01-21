@@ -8,5 +8,7 @@ public interface ArticleDao {
 	
 	public List<Article> listerArticle();	
 	
+	public List<Article> listerArticleCategorie(Integer idCategorie);
+	
 	public void ajouterArticle(Article article);
 }

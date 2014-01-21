@@ -28,9 +28,9 @@ public class CategorieDaoImpl implements CategorieDao {
 					Categorie categorie = new Categorie(
 							results.getInt("CAT_ID"),  
 							results.getString("CAT_LIBELLE"), 
+							results.getString("CAT_IMG_CAR"), 
 							results.getString("CAT_IMG_CAT"), 
 							results.getString("CAT_IMG_BLOG"), 
-							results.getString("CAT_IMG_CAR"), 
 							results.getString("CAT_DESCRIPTION"));
 							listeCategorie.add(categorie);
 				}	
