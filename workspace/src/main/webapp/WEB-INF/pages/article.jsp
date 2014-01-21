@@ -15,12 +15,12 @@
 			<img src="img/blog/pres/SkiBlog.jpg" alt="Blog" title="Blog"/>
 			<figcaption>SKI</figcaption>
 		</figure>
-		<div class="article">
-			<article class="contenu">
-					<aside class="bloc-date">
+		<div class="contenu">
+			<article class="article">
+					<aside class="bloc-date" id="bloc-date">
 			           <p>22 Janv 2014</p>
 			        </aside>
-			        <div class="titre">
+			        <div class="articleText">
 			            <h3>Lorem Ipsum is simply dummy text of the printing .</h3>
 			            <div class="bloc-infos-article">
 				        	<p class="infosAuthor"> By : <a href="cedpilou">Cedpilou</a></p>
@@ -35,16 +35,23 @@
 			            </div>
 			        </div> 
 			</article>
-		</div>
-		<form action="ajouterCommentaire" method="post" id="formCommentaire" enctype="text/plain">
-            <fieldset> 
-             	<input  class="commentaire" type="text" name="titre" id="nom" required placeholder="   Nom" />
-                 <textarea class="commentaire" id="message" name="message" rows="10" cols="50" required placeholder="Message"></textarea>
-            </fieldset>
-	    </form>
-		<div class="Commentaire">
-			<h4 class="nom">Cedpilou</h4>
-			<p>Lorem Ipsum is simply dummy text of the printing .</p>
+			<div class="bloc-commentaire">
+				  <p> Ajouter un commentaire</p>	
+			</div>
+			<form action="ajouterCommentaire" method="post" id="formCommentaire" enctype="text/plain">
+	            <fieldset> 
+	            	<input  class="ajoutCommentaire" type="email" name="email" required placeholder="  Email" />
+	             	<input  class="ajoutCommentaire" type="text" name="name" required placeholder="  Nom" />
+	                <textarea class="ajoutCommentaire" id="commentaire" name="message" rows="10" cols="50" required placeholder="Message"></textarea>
+	            	<div>
+                    	<input id="boutonEnvoyer" type="submit" value="Envoyer" />
+		            </div>
+	            </fieldset>
+		    </form>
+			<div class="Commentaire">
+				<h4 class="nom">Cedpilou</h4>
+				<p>Lorem Ipsum is simply dummy text of the printing .</p>
+			</div>
 		</div>
 		<jsp:include page="sidebar.jsp" />
 	</body>

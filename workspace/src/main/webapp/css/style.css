@@ -382,32 +382,31 @@ header{
 }
 
 /**** Article ****/
-
-.article{
+#bloc-date{
+	margin-right: 20px;
+}
+.contenu{
 	width:70%; 
 	min-height:1010px; 
-	float:left; 
-	display:block;
+	display: block;
+	float: left;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.article h3{
+	font-family: "bariol",Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size:1.5em;
+	margin-bottom:10px;
+	color:#414a5a;
+}
 .bloc-infos-article{
-	width: 100%;
+	width: 90%;
+	margin:auto;
 	height: 30px;
 	border-top: 1px solid #44c0c2;
-	border-bottom: 1px solid #44c0c2;;
+	border-bottom: 1px solid #44c0c2;
+	margin-bottom: 30px;
 }
 .bloc-infos-article p{
 	display: inline-block;
@@ -427,22 +426,55 @@ header{
 	text-decoration: none;
 	color:#000;
 }
+
+.article img{
+	width: 230px; 
+	height:230px; 
+	float:left;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
 .bloc-infos-article img{
 	width: 30px;
 	height: 30px;
 	margin-right: 2%;
 	float: right;
 }
-
-
-
-
-
-
-
-
-
-
+.articleText{
+	min-height: 400px;
+}
+.bloc-commentaire{
+	width: 90%;
+	margin:auto;
+	height: 30px;
+	border-top: 1px solid #44c0c2;
+	border-bottom: 1px solid #44c0c2;
+	margin-bottom: 30px;
+}
+.bloc-commentaire p{
+	display: inline-block;
+	text-align:center;
+	line-height: 30px;
+	height: 30px;
+	font-family:'bariol' ,Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size:1em;
+	width: 100%;
+}
+#formCommentaire{
+	width: 100%;
+}
+.ajoutCommentaire{
+	display: block;
+	margin:auto;
+	border: 1px solid #e9e9e9; 
+	margin-bottom: 20px;
+	width:40%;
+}
 
 
 /**** SideBar ****/
