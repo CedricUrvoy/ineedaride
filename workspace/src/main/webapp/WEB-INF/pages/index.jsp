@@ -1,5 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-
+<c:set var="pageSelectionnee" value="home" scope="request"></c:set>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -19,14 +19,14 @@
 				<h1>Ski & Snow</h1>
 			</div>	
 		</div>
-		<div class="choix-theme">
+		<div class="choix-theme" id="blog">
 			<ul>
 				<c:forEach var="categorie" items="${categories}">
 					<li>
 						<img src="${categorie.srcImgCat}" alt="${categorie.libelle}" title="${categorie.libelle}"/>
 						<h1>${categorie.libelle}</h1>
 						<p>${categorie.text}</p>
-						<a href="blog?${categorie.id}">	 Voir ce thème </a>		
+						<a href="blog?${categorie.id}">	 Voir ce blog </a>		
 					</li>
 				</c:forEach>		
 		</div>
@@ -36,7 +36,7 @@
 				<aside id="infosContact">
 					<h3>Rester en contact</h3>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
-					<ul class="reseaux">
+					<ul class="reseaux" id="sociaux">
 							<li class="reseauSociaux"><a href="http://www.facebook.com"><img src="img/blog/divers/Facebook.png" alt="facebook" title="facebook"/></a></li>
 							<li class="reseauSociaux"><a href="http://www.twitter.com"><img src="img/blog/divers/Twitter.png" alt="twitter" title="twitter"/></a></li>
 							<li class="reseauSociaux"><a href="www.google.com"><img src="img/blog/divers/Google+.png" alt="google" title="google"/></a></li>

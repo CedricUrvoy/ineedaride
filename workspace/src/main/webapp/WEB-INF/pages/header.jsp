@@ -5,9 +5,9 @@
 		</div>
 		<div class="menu">
 			<ul>
-				<li><a href="index">Home</a></li>
-				<li class="active"><a href="blog">Blog</a></li>
-				<li><a href="index#contact">Contact</a></li>
+				<li class="${pageSelectionnee=='home'?'active':''}"><a href="index" >Home</a></li>
+				<li class="${pageSelectionnee=='blog'?'active':''}"><a href="index#blog">Blog</a></li>
+				<li class="${pageSelectionnee=='contact'?'active':''}"><a href="index#contact">Contact</a></li>
 			</ul>
 		</div>
 	</nav>

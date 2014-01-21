@@ -205,6 +205,9 @@ header{
 	color: #FFF;
 	font-size: 0.8em;
 }
+#sociaux{
+	margin-left: 0px;
+}
 #formContact{
 	float:right;
 	display: inline-block;
@@ -437,6 +440,10 @@ header{
 	-o-border-radius: 3px;
 	border-radius: 3px;
 }
+#imageArticle{
+	margin-top: 15px;
+	margin-left: 6%;
+}
 .bloc-infos-article img{
 	width: 30px;
 	height: 30px;
@@ -446,6 +453,24 @@ header{
 .articleText{
 	min-height: 400px;
 }
+.text{
+	margin-left:245px;
+	margin-top:3%;
+	font-family: Arial, sans-serif;
+	font-weight: lighter;
+	font-style: normal;
+	font-size:0.9em;
+	color:#414a5a;
+	text-align:justify; 
+	line-height: 20px;
+}
+.text p{
+	min-width:300px;
+	max-width:700px;
+	max-height: 190px;
+	overflow: auto;
+}
+
 .bloc-commentaire{
 	width: 90%;
 	margin:auto;
@@ -474,6 +499,33 @@ header{
 	border: 1px solid #e9e9e9; 
 	margin-bottom: 20px;
 	width:40%;
+}
+.commentaires{
+	margin-top: 20px;
+}
+.commentaire{
+	width: 90%;
+	margin-left: 10%;	
+	min-height: 40px;
+	
+}
+.commentaire h4{
+	font-family:'bariol' ,Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size:1em;
+	display: inline-block;
+	margin-right: 10px;
+}
+.commentaire p{
+	display: inline-block;
+	font-family: Arial, sans-serif;
+	font-weight: lighter;
+	font-style: normal;
+	font-size:0.9em;
+	color:#414a5a;
+	text-align:justify; 
+	line-height: 20px;
 }
 
 

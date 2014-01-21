@@ -1,4 +1,6 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<c:set var="pageSelectionnee" value="blog" scope="request"></c:set>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -29,7 +31,7 @@
 				        	<a href="http://www.facebook.com"><img src="img/blog/divers/PartagerFacebook.png" alt="facebook" title="facebook"/></a>
 							<a href="http://www.twitter.com"><img src="img/blog/divers/PartagerTwitter.png" alt="twitter" title="twiter"/></a>		
 			       		 </div>
-			            <img src="img/blog/articles/apohutch/apohutch.jpg" alt="apo hutch" title="apo hutch"/>
+			            <img id="imageArticle" src="img/blog/articles/apohutch/apohutch.jpg" alt="apo hutch" title="apo hutch"/>
 			            <div class="text">
 				            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 			            </div>
@@ -48,9 +50,26 @@
 		            </div>
 	            </fieldset>
 		    </form>
-			<div class="Commentaire">
-				<h4 class="nom">Cedpilou</h4>
-				<p>Lorem Ipsum is simply dummy text of the printing .</p>
+			<div class="commentaires">
+				<div class="bloc-commentaire">
+				  <p> Commentaires</p>	
+				</div>
+				<div class="commentaire">
+					<h4 class="nom">Cedpilou :</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing .</p>
+				</div>
+				<div class="commentaire">
+					<h4 class="nom">Cedpilou :</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing .</p>
+				</div>
+				<div class="commentaire">
+					<h4 class="nom">Cedpilou :</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing .</p>
+				</div>
+				<div class="commentaire">
+					<h4 class="nom">Cedpilou :</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing .</p>
+				</div>
 			</div>
 		</div>
 		<jsp:include page="sidebar.jsp" />
