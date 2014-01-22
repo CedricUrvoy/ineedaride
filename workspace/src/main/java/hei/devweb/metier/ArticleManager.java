@@ -22,9 +22,20 @@ public class ArticleManager {
 	}
 
 	public List<Article> listerArticleCategorie(Integer idCategorie) {
-		System.out.println("Dans Methode : listerCategorie");
+		System.out.println("Dans Methode : listerArticleParCategorie");
 		return articleDao.listerArticleCategorie(idCategorie);
 	}
+	
+	public List<Article> listerArticle() {
+		System.out.println("Dans Methode : listerArticle");
+		return articleDao.listerArticle();
+	}
+	
+	public Article getArticle(Integer idArticle) {
+		
+		Article article = articleDao.getArticle(idArticle);
 
+		return article;
+	}
 }
 

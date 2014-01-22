@@ -10,5 +10,7 @@ public interface ArticleDao {
 	
 	public List<Article> listerArticleCategorie(Integer idCategorie);
 	
+	public Article getArticle(Integer idArticle);
+	
 	public void ajouterArticle(Article article);
 }

@@ -20,10 +20,10 @@
 		<div class="contenu">
 			<article class="article">
 					<aside class="bloc-date" id="bloc-date">
-			           <p>22 Janv 2014</p>
+			           <p>${article.date}/p>
 			        </aside>
 			        <div class="articleText">
-			            <h3>Lorem Ipsum is simply dummy text of the printing .</h3>
+			            <h3>${article.title}</h3>
 			            <div class="bloc-infos-article">
 				        	<p class="infosAuthor"> By : <a href="cedpilou">Cedpilou</a></p>
 				        	<p class="infosCategorie">Categorie : <a href="ski">Ski</a></p>
@@ -33,7 +33,7 @@
 			       		 </div>
 			            <img id="imageArticle" src="img/blog/articles/apohutch/apohutch.jpg" alt="apo hutch" title="apo hutch"/>
 			            <div class="text">
-				            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+				            <p>${article.description}</p>
 			            </div>
 			        </div> 
 			</article>

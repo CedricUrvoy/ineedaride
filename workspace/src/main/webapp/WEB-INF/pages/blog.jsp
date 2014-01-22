@@ -15,8 +15,8 @@
 	<body>
 	<jsp:include page="header.jsp" />
 		<figure class = bloc-img>
-			<img src="img/blog/pres/SkiBlog.jpg" alt="Blog" title="Blog"/>
-			<figcaption>SKI</figcaption>
+			<img src="${categorie.srcImgBlog}" alt="${categorie.libelle}" title="${categorie.libelle}"/>
+			<figcaption>${categorie.libelle}</figcaption>
 		</figure>
 		<div class="articles">
 			<c:forEach var="article" items="${articles}">
@@ -29,7 +29,7 @@
 			            <img src="${article.image}" alt="${article.title}" title="${article.title}"/>
 			            <div class="pres">
 				            <p>${article.description}</p>
-				            <a href="article" title="${article.title}" target="_self">Lire l'article</a>
+				            <a href="article?id=${article.id}" title="${article.title}" target="_self">Lire l'article</a>
 			            </div>
 			        </div>
 			        <div class="bloc-infos">

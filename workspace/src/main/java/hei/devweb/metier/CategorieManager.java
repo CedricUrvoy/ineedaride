@@ -2,7 +2,9 @@ package hei.devweb.metier;
 
 import hei.devweb.dao.CategorieDao;
 import hei.devweb.dao.impl.CategorieDaoImpl;
+import hei.devweb.model.Article;
 import hei.devweb.model.Categorie;
+
 import java.util.List;
 
 public class CategorieManager {
@@ -26,4 +28,10 @@ public class CategorieManager {
 		return categorieDao.listerCategorie();
 	}
 
+	public Categorie getCategorie(Integer idCategorie) {
+		
+		Categorie categorie = categorieDao.getCategorie(idCategorie);
+
+		return categorie;
+	}
 }

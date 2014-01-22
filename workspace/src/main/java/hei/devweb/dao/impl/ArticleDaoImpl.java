@@ -13,8 +13,35 @@ import hei.devweb.model.Article;
 public class ArticleDaoImpl implements ArticleDao{
 
 	public List<Article> listerArticle() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		List<Article> listeArticle = new ArrayList<Article>();
+		try{
+			/**** Creation de la connexion ****/
+			Connection connection = DataSourceProvider.getDataSource().getConnection();
+			
+			/**** Utilisation de la connexion ****/
+			
+			PreparedStatement stmt = connection.prepareStatement("SELECT * FROM  t_article ORDER BY ART_DATE");
+			ResultSet results = stmt.executeQuery();
+			while (results.next()){
+				Article article = new Article(
+						results.getInt("ART_ID"),  
+						results.getString("ART_TITLE"), 
+						results.getString("ART_DESCRIPTION"),
+						results.getString("ART_IMG"), 
+						results.getDate("ART_DATE"),
+						results.getInt("T_CATEGORIE_CAT_ID"));
+						listeArticle.add(article);
+			}	
+			/**** Fermer la connexion ****/
+			
+			connection.close();
+	    
+		} catch (SQLException e) {
+	        e.printStackTrace();
+	    }
+		return listeArticle;
+
 	}
 
 	public List<Article> listerArticleCategorie(Integer idCategorie) {
@@ -53,6 +80,38 @@ public class ArticleDaoImpl implements ArticleDao{
 	public void ajouterArticle(Article article) {
 		// TODO Auto-generated method stub
 		
+	}
+
+	public Article getArticle(Integer idArticle) {
+		
+		Article article = null;
+		try{
+			/**** Creation de la connexion ****/
+			Connection connection = DataSourceProvider.getDataSource().getConnection();
+			
+			/**** Utilisation de la connexion ****/
+			
+			PreparedStatement stmt = connection.prepareStatement("SELECT * FROM  t_article WHERE ART_ID= ?");
+			stmt.setInt(1, idArticle);
+			ResultSet results = stmt.executeQuery();
+			if(results.next()){
+				article = new Article(
+						results.getInt("ART_ID"),  
+						results.getString("ART_TITLE"), 
+						results.getString("ART_DESCRIPTION"),
+						results.getString("ART_IMG"), 
+						results.getDate("ART_DATE"),
+						results.getInt("T_CATEGORIE_CAT_ID"));
+			}
+			
+			/**** Fermer la connexion ****/
+			
+			connection.close();
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	    }
+		
+		return article;
 	}
 
 }

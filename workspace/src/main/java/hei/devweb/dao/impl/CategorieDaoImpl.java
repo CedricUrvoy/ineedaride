@@ -44,5 +44,37 @@ public class CategorieDaoImpl implements CategorieDao {
 			return listeCategorie;
 	}
 
+	public Categorie getCategorie(Integer idCategorie) {
+		
+		Categorie categorie = null;
+		try{
+			/**** Creation de la connexion ****/
+			Connection connection = DataSourceProvider.getDataSource().getConnection();
+			
+			/**** Utilisation de la connexion ****/
+			
+			PreparedStatement stmt = connection.prepareStatement("SELECT * FROM  T_CATEGORIE WHERE CAT_ID= ?");
+			stmt.setInt(1, idCategorie);
+			ResultSet results = stmt.executeQuery();
+			while (results.next()){
+				categorie = new Categorie(
+						results.getInt("CAT_ID"),  
+						results.getString("CAT_LIBELLE"), 
+						results.getString("CAT_IMG_CAR"), 
+						results.getString("CAT_IMG_CAT"), 
+						results.getString("CAT_IMG_BLOG"), 
+						results.getString("CAT_DESCRIPTION"));
+			}	
+			
+			/**** Fermer la connexion ****/
+			
+			connection.close();
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	    }
+		
+		return categorie;
+	}
+
 
 }

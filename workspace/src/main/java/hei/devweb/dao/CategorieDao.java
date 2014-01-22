@@ -7,4 +7,6 @@ import java.util.List;
 public interface CategorieDao {
 	
 	public List<Categorie> listerCategorie();
+	
+	public Categorie getCategorie(Integer idCategorie);
 }

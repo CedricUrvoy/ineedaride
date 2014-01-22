@@ -14,25 +14,24 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class BlogServlet extends HttpServlet{
+public class AdminServlet extends HttpServlet{
 
-	private static final long serialVersionUID = -6601439810866984722L;
-
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 800409617440767322L;
+	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 		
-		Integer idCategorie = Integer.parseInt(req.getParameter("idCategorie"));
-		Categorie categorie = CategorieManager.getInstance().getCategorie(idCategorie);
-		req.setAttribute("categorie", categorie);
-		
 		List<Categorie> categories = CategorieManager.getInstance().listerCategorie();
 		req.setAttribute("categories", categories);	
+		List<Article> articles = ArticleManager.getInstance().listerArticle();
+		req.setAttribute("articles", articles);
 		
-		List<Article> articles = ArticleManager.getInstance().listerArticleCategorie(idCategorie);
-		req.setAttribute("articles", articles);	
-	
-		RequestDispatcher view = req.getRequestDispatcher("WEB-INF/pages/blog.jsp");
-		view.forward(req, resp);
+	RequestDispatcher view = req.getRequestDispatcher("WEB-INF/pages/admin.jsp");
+	view.forward(req, resp);
 	}
 }
+
