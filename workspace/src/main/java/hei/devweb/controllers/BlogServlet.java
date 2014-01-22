@@ -26,9 +26,6 @@ public class BlogServlet extends HttpServlet{
 		Categorie categorie = CategorieManager.getInstance().getCategorie(idCategorie);
 		req.setAttribute("categorie", categorie);
 		
-		List<Categorie> categories = CategorieManager.getInstance().listerCategorie();
-		req.setAttribute("categories", categories);	
-		
 		List<Article> articles = ArticleManager.getInstance().listerArticleCategorie(idCategorie);
 		req.setAttribute("articles", articles);	
 	

@@ -19,10 +19,9 @@
 			<div class="categorie">
 				<h2>Categories</h2>
 				<ul>
-					<li class="activeCategorie">><a href="ski">SKI</a></li>
-					<li>><a href="snow">SNOW</a></li>
-					<li>><a href="fixie">FIXIE</a></li>
-					<li>><a href="kyte">KYTE</a></li>
+					<li >><a href="blog?idCategorie=1">Ski & Snow </a></li>
+					<li>><a href="blog?idCategorie=2">Fixie</a></li>
+					<li>><a href="blog?idCategorie=3">Kite & Surf</a></li>
 				</ul>
 			</div>
 </aside>
