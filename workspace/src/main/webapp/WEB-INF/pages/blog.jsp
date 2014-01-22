@@ -35,7 +35,7 @@
 			        <div class="bloc-infos">
 			        	<p class="infosAuthor"> By : <a href="cedpilou">${article.nameAuthor}</a></p>
 			        	<p class="infosCategorie">Categorie : <a href="ski">${article.nameCategorie}</a></p>
-			        	<p><a href="comments">[25] Commentaires	</a></p>
+			        	<p><a href="article?id=${article.id}#commentaires">[25] Commentaires	</a></p>
 			        	<a href="http://www.facebook.com"><img src="img/blog/divers/PartagerFacebook.png" alt="facebook" title="facebook"/></a>
 						<a href="http://www.twitter.com"><img src="img/blog/divers/PartagerTwitter.png" alt="twitter" title="twiter"/></a>		
 			        </div>

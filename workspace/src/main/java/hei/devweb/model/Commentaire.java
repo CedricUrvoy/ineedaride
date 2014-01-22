@@ -9,14 +9,16 @@ public class Commentaire {
 	private String text;
 	private String name;
 	private String email;
+	private Integer idArticle;
 	
 	/**** Contructeur(s) ****/
 	
-	public Commentaire(Integer id, String text, String name, String email) {
+	public Commentaire(Integer id, String text, String name, String email, Integer idArticle) {
 		this.id = id;
 		this.text = text;
 		this.name = name;
 		this.email = email;
+		this.idArticle = idArticle;
 	}
 
 	
@@ -24,10 +26,20 @@ public class Commentaire {
 	
 	
 	/**** Getters and Setters ****/
-
+	
 	public Integer getId() {
 		return id;
 	}
+
+	public Integer getIdArticle() {
+		return idArticle;
+	}
+
+
+	public void setIdArticle(Integer idArticle) {
+		this.idArticle = idArticle;
+	}
+
 
 	public void setId(Integer id) {
 		this.id = id;

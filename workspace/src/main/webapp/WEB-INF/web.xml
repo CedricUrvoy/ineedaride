@@ -19,6 +19,10 @@
 		<servlet-name>Admin</servlet-name>
 		<servlet-class>hei.devweb.controllers.AdminServlet</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>AjouterCommentaire</servlet-name>
+		<servlet-class>hei.devweb.controllers.AjouterCommentaireServlet</servlet-class>
+	</servlet>
 
 	
 	<servlet-mapping>
@@ -36,6 +40,10 @@
 	<servlet-mapping>
 		<servlet-name>Admin</servlet-name>
 		<url-pattern>/admin</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AjouterCommentaire</servlet-name>
+		<url-pattern>/ajoutercommentaire</url-pattern>
 	</servlet-mapping>
 
 	
