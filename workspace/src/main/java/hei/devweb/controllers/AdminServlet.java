@@ -1,8 +1,10 @@
 package hei.devweb.controllers;
 
 import hei.devweb.metier.ArticleManager;
+import hei.devweb.metier.AuteurManager;
 import hei.devweb.metier.CategorieManager;
 import hei.devweb.model.Article;
+import hei.devweb.model.Auteur;
 import hei.devweb.model.Categorie;
 
 import java.io.IOException;
@@ -29,6 +31,8 @@ public class AdminServlet extends HttpServlet{
 		req.setAttribute("categories", categories);	
 		List<Article> articles = ArticleManager.getInstance().listerArticle();
 		req.setAttribute("articles", articles);
+		List<Auteur> auteurs = AuteurManager.getInstance().listerAuteur();
+		req.setAttribute("auteurs", auteurs);
 		
 	RequestDispatcher view = req.getRequestDispatcher("WEB-INF/pages/admin.jsp");
 	view.forward(req, resp);

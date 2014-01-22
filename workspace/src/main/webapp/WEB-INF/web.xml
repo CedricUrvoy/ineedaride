@@ -15,6 +15,10 @@
 		<servlet-name>Article</servlet-name>
 		<servlet-class>hei.devweb.controllers.ArticleServlet</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>Admin</servlet-name>
+		<servlet-class>hei.devweb.controllers.AdminServlet</servlet-class>
+	</servlet>
 
 	
 	<servlet-mapping>
@@ -28,6 +32,10 @@
 	<servlet-mapping>
 		<servlet-name>Article</servlet-name>
 		<url-pattern>/article</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Admin</servlet-name>
+		<url-pattern>/admin</url-pattern>
 	</servlet-mapping>
 
 	

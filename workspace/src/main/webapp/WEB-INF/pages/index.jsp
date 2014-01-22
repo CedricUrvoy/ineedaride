@@ -31,27 +31,6 @@
 				</c:forEach>		
 		</div>
 		
-		<div class="blocAjout">
-			<div class="bloc-commentaire"">
-				<p>Ajouter un Article</p>
-			</div>
-				<form method="post" action="ajouterarticle" class="formAjouter">
-					<input  class="champText" type="text" name="titreArticle" id="titreArticle" required placeholder="   Titre" />
-                    <div> 
-                        <textarea class="champText" id="description" name="description" rows="10" cols="50" required placeholder="   Contenu de l'article"></textarea>
-                    </div> 
-                    <input  class="champText" type="file" name="titre" id="titreArticle" required placeholder="   Chemin image" />
-                    <select name="champ2" >
-                    	<c:forEach var="categorie" items="${categories}">
-				      		<option>${categorie.libelle}</option>
-				      	</c:forEach>
-   					</select>
-                    <input  class="champText" type="number" name="idCategorie" id="idCategorie" required placeholder="1" />
-                    <div>
-                    	<input id="boutonEnvoyer" type="submit" value="Ajouter l'article" />
-                    </div>
-				</form>
-		</div>
 		
 		<div class="contactGlobal" id="contact">
 			<h1>Contact</h1>

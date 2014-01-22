@@ -21,7 +21,10 @@ public class ArticleDaoImpl implements ArticleDao{
 			
 			/**** Utilisation de la connexion ****/
 			
-			PreparedStatement stmt = connection.prepareStatement("SELECT * FROM  t_article ORDER BY ART_DATE");
+			PreparedStatement stmt = connection.prepareStatement("SELECT * FROM  t_article "
+					+ "INNER JOIN t_categorie ON CAT_ID = T_CATEGORIE_CAT_ID "
+					+ "INNER JOIN t_author ON T_AUTHOR_AUT_ID = AUT_ID "
+					+ "ORDER BY ART_DATE");
 			ResultSet results = stmt.executeQuery();
 			while (results.next()){
 				Article article = new Article(
@@ -30,7 +33,9 @@ public class ArticleDaoImpl implements ArticleDao{
 						results.getString("ART_DESCRIPTION"),
 						results.getString("ART_IMG"), 
 						results.getDate("ART_DATE"),
-						results.getInt("T_CATEGORIE_CAT_ID"));
+						results.getInt("T_CATEGORIE_CAT_ID"),
+						results.getString("CAT_LIBELLE"),
+						results.getString("AUT_FIRSTNAME"));
 						listeArticle.add(article);
 			}	
 			/**** Fermer la connexion ****/
@@ -53,7 +58,11 @@ public class ArticleDaoImpl implements ArticleDao{
 				
 				/**** Utilisation de la connexion ****/
 				
-				PreparedStatement stmt = connection.prepareStatement("SELECT * FROM  t_article WHERE T_CATEGORIE_CAT_ID=? ORDER BY ART_DATE");
+				PreparedStatement stmt = connection.prepareStatement("SELECT * FROM  t_article "
+						+ "INNER JOIN t_categorie ON CAT_ID = T_CATEGORIE_CAT_ID "
+						+ "INNER JOIN t_author ON T_AUTHOR_AUT_ID = AUT_ID "
+						+ "WHERE T_CATEGORIE_CAT_ID=? "
+						+ "ORDER BY ART_DATE");
 				stmt.setInt(1, idCategorie);
 				ResultSet results = stmt.executeQuery();
 				while (results.next()){
@@ -63,7 +72,9 @@ public class ArticleDaoImpl implements ArticleDao{
 							results.getString("ART_DESCRIPTION"),
 							results.getString("ART_IMG"), 
 							results.getDate("ART_DATE"),
-							results.getInt("T_CATEGORIE_CAT_ID"));
+							results.getInt("T_CATEGORIE_CAT_ID"),
+							results.getString("CAT_LIBELLE"),
+							results.getString("AUT_FIRSTNAME"));
 							listeArticleCategorie.add(article);
 				}	
 				/**** Fermer la connexion ****/
@@ -91,7 +102,7 @@ public class ArticleDaoImpl implements ArticleDao{
 			
 			/**** Utilisation de la connexion ****/
 			
-			PreparedStatement stmt = connection.prepareStatement("SELECT * FROM  t_article WHERE ART_ID= ?");
+			PreparedStatement stmt = connection.prepareStatement("SELECT * FROM  t_article INNER JOIN t_categorie ON CAT_ID = T_CATEGORIE_CAT_ID INNER JOIN t_author ON T_AUTHOR_AUT_ID = AUT_ID  WHERE ART_ID= ?");
 			stmt.setInt(1, idArticle);
 			ResultSet results = stmt.executeQuery();
 			if(results.next()){
@@ -101,7 +112,9 @@ public class ArticleDaoImpl implements ArticleDao{
 						results.getString("ART_DESCRIPTION"),
 						results.getString("ART_IMG"), 
 						results.getDate("ART_DATE"),
-						results.getInt("T_CATEGORIE_CAT_ID"));
+						results.getInt("T_CATEGORIE_CAT_ID"),
+						results.getString("CAT_LIBELLE"),
+						results.getString("AUT_FIRSTNAME"));
 			}
 			
 			/**** Fermer la connexion ****/

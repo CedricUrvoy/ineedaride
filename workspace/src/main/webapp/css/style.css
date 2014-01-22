@@ -621,7 +621,7 @@ header{
 }
 .categorie a:hover{
 
-	color: #44c0c2;
+	color: #;
 	text-decoration:none;
 	font-style: italic;
 }
@@ -637,4 +637,53 @@ header{
 	-ms-border-radius: 3px;
 	-o-border-radius: 3px;
 	border-radius: 3px;
+}
+
+/**** Admin ****/
+
+.tableau {
+width: 80%;
+margin:auto;
+display: block;
+margin-bottom: 20px;
+}
+.tableau th {
+background-color: #44c0c2 ;
+font-weight: normal;
+color:#FFF;
+padding: 20px 30px;
+text-align: center;
+}
+.tableau td {
+background-color: #e9e9e9;
+padding: 20px 30px;
+color: #6f6f6f;
+}
+
+.blocAjout{
+	width: 90%;
+	margin: auto;
+	margin-bottom: 30px;
+}
+.blocAjout #boutonEnvoyer{
+	width: 200px;
+}
+.formAjouter{
+	width:50%;
+	margin: auto;
+}
+.ajoutArticle{
+	display: block;
+	margin:auto;
+	border: 1px solid #e9e9e9; 
+	margin-bottom: 20px;
+	width:40%;
+}
+#descriptionArticle{
+	width:70%;
+}
+#tableauAuteur{
+	width:35%;
+	margin: auto;
+	margin-bottom: 20px;	
 }
