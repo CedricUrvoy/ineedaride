@@ -43,7 +43,7 @@
 					<td>${article.image}</td>
 					<td>${article.nameCategorie}</td>
 					<td>${article.nameAuthor}</td>
-					<td>${article.nbrCommentaire}</td>
+					<td><a href="article?id=${article.id}#commentaires">${article.nbrCommentaire}</td>
 					<td><a href="supprimerarticle?id=${article.id}" title="supprimer" >X</a></td>
 				</tr>
 				</c:forEach>

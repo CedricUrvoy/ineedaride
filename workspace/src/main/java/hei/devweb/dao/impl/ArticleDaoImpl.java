@@ -25,7 +25,7 @@ public class ArticleDaoImpl implements ArticleDao{
 			PreparedStatement stmt = connection.prepareStatement("SELECT * FROM  t_article "
 					+ "INNER JOIN t_categorie ON CAT_ID = T_CATEGORIE_CAT_ID "
 					+ "INNER JOIN t_author ON T_AUTHOR_AUT_ID = AUT_ID "
-					+ "ORDER BY ART_DATE");
+					+ "ORDER BY ART_DATE DESC");
 			ResultSet results = stmt.executeQuery();
 			while (results.next()){
 				Article article = new Article(
@@ -64,7 +64,7 @@ public class ArticleDaoImpl implements ArticleDao{
 						+ "INNER JOIN t_categorie ON CAT_ID = T_CATEGORIE_CAT_ID "
 						+ "INNER JOIN t_author ON T_AUTHOR_AUT_ID = AUT_ID "
 						+ "WHERE T_CATEGORIE_CAT_ID=? "
-						+ "ORDER BY ART_DATE");
+						+ "ORDER BY ART_DATE DESC");
 				stmt.setInt(1, idCategorie);
 				ResultSet results = stmt.executeQuery();
 				while (results.next()){
