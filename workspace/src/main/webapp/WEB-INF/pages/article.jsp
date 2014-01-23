@@ -10,6 +10,8 @@
 		<meta name="description" content="WebSite Ski/FixedGear/Kyte" />
 		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="js/needaride.js"></script>
 	</head>
 
 	<body>

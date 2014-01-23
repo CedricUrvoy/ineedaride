@@ -26,22 +26,22 @@
 						<img src="${categorie.srcImgCat}" alt="${categorie.libelle}" title="${categorie.libelle}"/>
 						<h1>${categorie.libelle}</h1>
 						<p>${categorie.text}</p>
-						<a href="blog?idCategorie=${categorie.id}">	 Voir ce blog </a>		
+						<a href="blog?idCategorie=${categorie.id}">Voir ce	Blog </a>		
 					</li>
 				</c:forEach>		
 		</div>
-		
-		
 		<div class="contactGlobal" id="contact">
 			<h1>Contact</h1>
 			<div class="contact">
 				<aside id="infosContact">
 					<h3>Rester en contact</h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+					<p>Site réaliser dans le cadre du projet de developpement web en HEI4</p><br/>
+					<p>Copyright 2013 Cédric Urvoy</p>
+					<p>- Tous droits réservés -</p>
 					<ul class="reseaux" id="sociaux">
 							<li class="reseauSociaux"><a href="http://www.facebook.com"><img src="img/blog/divers/Facebook.png" alt="facebook" title="facebook"/></a></li>
 							<li class="reseauSociaux"><a href="http://www.twitter.com"><img src="img/blog/divers/Twitter.png" alt="twitter" title="twitter"/></a></li>
-							<li class="reseauSociaux"><a href="www.google.com"><img src="img/blog/divers/Google+.png" alt="google" title="google"/></a></li>
+							<li class="reseauSociaux"><a href="http://www.google.com"><img src="img/blog/divers/Google+.png" alt="google" title="google"/></a></li>
 					</ul>
 					<p> Adresse email : cedric.urvoy@hei.fr </p>
 					<p> Tel : 06 . 14 . 14 . 74 . 30  </p>

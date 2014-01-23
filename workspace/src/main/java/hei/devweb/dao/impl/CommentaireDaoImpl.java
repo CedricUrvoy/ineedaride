@@ -81,11 +81,11 @@ public class CommentaireDaoImpl implements CommentaireDao{
 			/**** Utilisation de la connexion ****/
 			
 			PreparedStatement stmt = connection.prepareStatement(""
-					+"SELECT COUNT(*) FROM  t_comment WHERE T_ARTICLE_ART_ID=?");
+					+"SELECT count(*) FROM  t_comment WHERE T_ARTICLE_ART_ID=?");
 			stmt.setInt(1, idArticle);
 			ResultSet results = stmt.executeQuery();
 			while (results.next()){
-				compt = results.getInt("COUNT(COM_ID)");
+				compt = results.getInt("count(*)");
 			}	
 			/**** Fermer la connexion ****/
 			

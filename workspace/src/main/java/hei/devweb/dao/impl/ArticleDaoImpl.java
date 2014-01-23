@@ -1,6 +1,7 @@
 package hei.devweb.dao.impl;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -34,6 +35,7 @@ public class ArticleDaoImpl implements ArticleDao{
 						results.getString("ART_IMG"), 
 						results.getDate("ART_DATE"),
 						results.getInt("T_CATEGORIE_CAT_ID"),
+						results.getInt("T_AUTHOR_AUT_ID"),
 						results.getString("CAT_LIBELLE"),
 						results.getString("AUT_FIRSTNAME"));
 						listeArticle.add(article);
@@ -73,6 +75,7 @@ public class ArticleDaoImpl implements ArticleDao{
 							results.getString("ART_IMG"), 
 							results.getDate("ART_DATE"),
 							results.getInt("T_CATEGORIE_CAT_ID"),
+							results.getInt("T_AUTHOR_AUT_ID"),
 							results.getString("CAT_LIBELLE"),
 							results.getString("AUT_FIRSTNAME"));
 							listeArticleCategorie.add(article);
@@ -89,7 +92,30 @@ public class ArticleDaoImpl implements ArticleDao{
 		}
 
 	public void ajouterArticle(Article article) {
-		// TODO Auto-generated method stub
+		
+		/**** Creation de la connexion ****/
+		
+		try
+		{
+			Connection connection = DataSourceProvider.getDataSource().getConnection();
+			
+			/**** Utilisation de la connexion ****/
+			
+			PreparedStatement stmt = connection.prepareStatement(""
+					+ "INSERT INTO t_article(ART_TITLE,ART_DESCRIPTION,ART_IMG,ART_DATE,T_CATEGORIE_CAT_ID,T_AUTHOR_AUT_ID) VALUES (?,?,?,?,?,?)");
+			stmt.setString(1, article.getTitle());
+			stmt.setString(2, article.getDescription());
+			stmt.setString(3, article.getImage());
+			stmt.setDate(4, new Date(article.getDate().getTime()));
+			stmt.setInt(5, article.getIdCategorie());
+			stmt.setInt(6, article.getIdAuthor());
+			stmt.executeUpdate();
+		
+			/**** Fermer la connexion ****/
+			connection.close();
+		} catch (SQLException e){
+			e.printStackTrace();
+		}
 		
 	}
 
@@ -102,7 +128,10 @@ public class ArticleDaoImpl implements ArticleDao{
 			
 			/**** Utilisation de la connexion ****/
 			
-			PreparedStatement stmt = connection.prepareStatement("SELECT * FROM  t_article INNER JOIN t_categorie ON CAT_ID = T_CATEGORIE_CAT_ID INNER JOIN t_author ON T_AUTHOR_AUT_ID = AUT_ID  WHERE ART_ID= ?");
+			PreparedStatement stmt = connection.prepareStatement("SELECT * FROM  t_article "
+					+ "INNER JOIN t_categorie ON CAT_ID = T_CATEGORIE_CAT_ID "
+					+ "INNER JOIN t_author ON T_AUTHOR_AUT_ID = AUT_ID  "
+					+ "WHERE ART_ID= ?");
 			stmt.setInt(1, idArticle);
 			ResultSet results = stmt.executeQuery();
 			if(results.next()){
@@ -113,6 +142,7 @@ public class ArticleDaoImpl implements ArticleDao{
 						results.getString("ART_IMG"), 
 						results.getDate("ART_DATE"),
 						results.getInt("T_CATEGORIE_CAT_ID"),
+						results.getInt("T_AUTHOR_AUT_ID"),
 						results.getString("CAT_LIBELLE"),
 						results.getString("AUT_FIRSTNAME"));
 			}
@@ -125,6 +155,29 @@ public class ArticleDaoImpl implements ArticleDao{
 	    }
 		
 		return article;
+	}
+
+	public void supprimerArticle(Integer idArticle) {
+		
+		/**** Creation de la connexion ****/
+		
+		try
+		{
+			Connection connection = DataSourceProvider.getDataSource().getConnection();
+			
+			/**** Utilisation de la connexion ****/
+			
+			PreparedStatement stmt = connection.prepareStatement(""
+					+ "DELETE FROM t_article WHERE ART_ID=? ");
+			stmt.setInt(1,idArticle);
+			stmt.executeUpdate();
+		
+			/**** Fermer la connexion ****/
+			connection.close();
+		} catch (SQLException e){
+			e.printStackTrace();
+		}
+		
 	}
 
 }

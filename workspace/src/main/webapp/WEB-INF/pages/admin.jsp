@@ -10,6 +10,8 @@
 		<meta name="description" content="WebSite Ski/FixedGear/Kyte" />
 		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="js/needaride.js"></script>
 	</head>
 
 	<body>
@@ -31,7 +33,7 @@
 						<th>Categorie</th>
 						<th>Auteur</th>
 						<th>Nombres de commentaires</th>
-						<th>supprimer</th>
+						<th>Supprimer</th>
 				</tr>
 				<c:forEach var="article" items="${articles}">
 				<tr class="ligne">
@@ -40,24 +42,24 @@
 					<td><fmt:formatDate value="${article.date}" pattern="dd/MM/yy"/></td>
 					<td>${article.image}</td>
 					<td>${article.nameCategorie}</td>
-					<td>cedpilou</td>
-					<td>25</td>
-					<td>supprimer</td>
+					<td>${article.nameAuthor}</td>
+					<td>${article.nbrCommentaire}</td>
+					<td><a href="supprimerarticle?id=${article.id}" title="supprimer" >X</a></td>
 				</tr>
 				</c:forEach>
 			</table>
 		</div>
 		<div class="blocAjout">
 			<div class="bloc-commentaire"">
-				<p>Ajouter un Article</p>
+				<a title="AjouterArticle" id="ajouterArticle">Ajouter un Article  +</a>
 			</div>
 				<form method="post" action="ajouterarticle" class="formAjouter">
 					<input  class="ajoutArticle" type="text" name="titreArticle" id="titreArticle" required placeholder="   Titre" />
                     <div> 
-                        <textarea class="ajoutArticle" id="descriptionArticle" name="description" rows="10" cols="50" required placeholder="   Contenu de l'article"></textarea>
+                        <textarea class="ajoutArticle" id="descriptionArticle" name="descriptionArticle" rows="10" cols="50" required placeholder="   Contenu de l'article"></textarea>
                     </div> 
-                    <input  class="ajoutArticle" type="file" name="titre" id="imageArticle" required placeholder="  Chemin image" />
-                    <select  class="ajoutArticle" name="champCategorie" >
+                    <input  class="ajoutArticle" type="file" name="imageArticle" id="imageArticle" required placeholder="  Chemin image" />
+                    <select  class="ajoutArticle" name="idCategorie" id="idCategorie" >
                     	<c:forEach var="categorie" items="${categories}">
 				      		<option>${categorie.libelle}</option>
 				      	</c:forEach>

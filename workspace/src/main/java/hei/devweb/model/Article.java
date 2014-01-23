@@ -12,19 +12,23 @@ public class Article {
 	private Date date;
 	private String image;
 	private Integer idCategorie;
+	private Integer idAuthor;
 	private String nameCategorie;
 	private String nameAuthor;
+	
+	private int nbrCommentaire =0;
 
 	
 	/**** Contructeur(s) ****/
 	
-	public Article(Integer id, String title, String description, String image, Date date, Integer idCategorie, String nameCategorie, String nameAuthor) {
+	public Article(Integer id, String title, String description, String image, Date date, Integer idCategorie, Integer idAuthor, String nameCategorie, String nameAuthor) {
 		this.id = id;
 		this.title = title;
 		this.description = description;
 		this.image = image;
 		this.date = date;
 		this.idCategorie = idCategorie;
+		this.idAuthor = idAuthor;
 		this.nameCategorie = nameCategorie;
 		this.nameAuthor = nameAuthor;
 	}
@@ -36,6 +40,22 @@ public class Article {
 	
 	public Integer getId() {
 		return id;
+	}
+
+	public int getNbrCommentaire() {
+		return nbrCommentaire;
+	}
+
+	public void setNbrCommentaire(int nbrCommentaire) {
+		this.nbrCommentaire = nbrCommentaire;
+	}
+
+	public Integer getIdAuthor() {
+		return idAuthor;
+	}
+
+	public void setIdAuthor(Integer idAuthor) {
+		this.idAuthor = idAuthor;
 	}
 
 	public String getNameAuthor() {

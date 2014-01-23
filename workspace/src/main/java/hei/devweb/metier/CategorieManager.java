@@ -2,7 +2,6 @@ package hei.devweb.metier;
 
 import hei.devweb.dao.CategorieDao;
 import hei.devweb.dao.impl.CategorieDaoImpl;
-import hei.devweb.model.Article;
 import hei.devweb.model.Categorie;
 
 import java.util.List;

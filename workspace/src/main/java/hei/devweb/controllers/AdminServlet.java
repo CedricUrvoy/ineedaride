@@ -3,6 +3,7 @@ package hei.devweb.controllers;
 import hei.devweb.metier.ArticleManager;
 import hei.devweb.metier.AuteurManager;
 import hei.devweb.metier.CategorieManager;
+import hei.devweb.metier.CommentaireManager;
 import hei.devweb.model.Article;
 import hei.devweb.model.Auteur;
 import hei.devweb.model.Categorie;
@@ -31,6 +32,10 @@ public class AdminServlet extends HttpServlet{
 		req.setAttribute("categories", categories);	
 		List<Article> articles = ArticleManager.getInstance().listerArticle();
 		req.setAttribute("articles", articles);
+		for (int i = 0; i < articles.size(); i++) {
+			articles.get(i).setNbrCommentaire(CommentaireManager.getInstance().compterCommentaire(articles.get(i).getId()));
+			System.out.println(CommentaireManager.getInstance().compterCommentaire(articles.get(i).getId()));
+		}
 		List<Auteur> auteurs = AuteurManager.getInstance().listerAuteur();
 		req.setAttribute("auteurs", auteurs);
 		

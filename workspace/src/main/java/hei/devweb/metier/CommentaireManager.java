@@ -29,4 +29,8 @@ public class CommentaireManager {
 	public void ajouterCommentaire(Commentaire commentaire) {
 		commentaireDao.ajouterCommentaire(commentaire);
 	}
+	
+	public int compterCommentaire (int idArticle){
+		return commentaireDao.CompterCommentaire(idArticle);
+	}
 }

@@ -37,5 +37,13 @@ public class ArticleManager {
 
 		return article;
 	}
+	
+	public void ajouterArticle (Article article){
+		articleDao.ajouterArticle(article);
+	}
+	
+	public void supprimerArticle (Integer idArticle){
+		articleDao.supprimerArticle(idArticle);
+	}
 }
 

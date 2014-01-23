@@ -9,7 +9,7 @@
 				<ul class="reseaux">
 					<li class="reseauSociaux"><a href="http://www.facebook.com"><img src="img/blog/divers/Facebook.png" alt="facebook" title="facebook"/></a></li>
 					<li class="reseauSociaux"><a href="http://www.twitter.com"><img src="img/blog/divers/Twitter.png" alt="twitter" title="twitter"/></a></li>
-					<li class="reseauSociaux"><a href="www.google.com"><img src="img/blog/divers/Google+.png" alt="google" title="google"/></a></li>
+					<li class="reseauSociaux"><a href="http://www.google.com"><img src="img/blog/divers/Google+.png" alt="google" title="google"/></a></li>
 				</ul>
 				<form method="post" action="inscription" class="inscription">
 					<input type="text" name="inscription" id="emailInscription" placeholder="   Email">

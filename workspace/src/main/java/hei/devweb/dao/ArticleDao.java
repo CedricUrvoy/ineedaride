@@ -13,4 +13,6 @@ public interface ArticleDao {
 	public Article getArticle(Integer idArticle);
 	
 	public void ajouterArticle(Article article);
+	
+	public void supprimerArticle(Integer idArticle);
 }

@@ -20,6 +20,16 @@
     <servlet-name>AjouterCommentaire</servlet-name>
     <servlet-class>hei.devweb.controllers.AjouterCommentaireServlet</servlet-class>
   </servlet>
+   <servlet>
+    <servlet-name>AjouterArticle</servlet-name>
+    <servlet-class>hei.devweb.controllers.AjouterArticleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SupprimerArticle</servlet-name>
+    <servlet-class>hei.devweb.controllers.SupprimerArticleServlet</servlet-class>
+  </servlet>
+  
+  
   <servlet-mapping>
     <servlet-name>Home</servlet-name>
     <url-pattern>/index</url-pattern>
@@ -40,6 +50,15 @@
     <servlet-name>AjouterCommentaire</servlet-name>
     <url-pattern>/ajoutercommentaire</url-pattern>
   </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AjouterArticle</servlet-name>
+    <url-pattern>/ajouterarticle</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>SupprimerArticle</servlet-name>
+    <url-pattern>/supprimerarticle</url-pattern>
+  </servlet-mapping>
+  
   <welcome-file-list>
     <welcome-file>index</welcome-file>
   </welcome-file-list>

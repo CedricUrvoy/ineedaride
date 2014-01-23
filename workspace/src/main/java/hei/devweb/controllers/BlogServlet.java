@@ -2,6 +2,7 @@ package hei.devweb.controllers;
 
 import hei.devweb.metier.ArticleManager;
 import hei.devweb.metier.CategorieManager;
+import hei.devweb.metier.CommentaireManager;
 import hei.devweb.model.Article;
 import hei.devweb.model.Categorie;
 
@@ -28,6 +29,9 @@ public class BlogServlet extends HttpServlet{
 		
 		List<Article> articles = ArticleManager.getInstance().listerArticleCategorie(idCategorie);
 		req.setAttribute("articles", articles);	
+		for (int i = 0; i < articles.size(); i++) {
+			articles.get(i).setNbrCommentaire(CommentaireManager.getInstance().compterCommentaire(articles.get(i).getId()));
+		}
 	
 		RequestDispatcher view = req.getRequestDispatcher("WEB-INF/pages/blog.jsp");
 		view.forward(req, resp);
