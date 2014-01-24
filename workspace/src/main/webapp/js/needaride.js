@@ -35,7 +35,7 @@ function slideImg(){
 slideImg();
 
 
-	/**** Fonction pour refresh apres un ajout ****/
+	/**** Fonction pour ajouter un commentaire sur le dom****/
 
 
 
@@ -51,5 +51,8 @@ $("#boutonEnvoyer").click(function(event) {
 	 });
 	 event.preventDefault();
 	});
+
+
+
 
 });
