@@ -3,12 +3,9 @@ package hei.devweb.controllers;
 import hei.devweb.metier.ArticleManager;
 import hei.devweb.metier.AuteurManager;
 import hei.devweb.metier.CategorieManager;
-import hei.devweb.metier.CommentaireManager;
 import hei.devweb.model.Article;
 import hei.devweb.model.Auteur;
 import hei.devweb.model.Categorie;
-import hei.devweb.model.Commentaire;
-
 import java.io.IOException;
 import java.util.Date;
 import java.util.List;
@@ -60,5 +57,7 @@ public class AjouterArticleServlet extends HttpServlet{
 		System.out.println(titre+ " " + description + " "+ image + " " + idCategorie +" "+idAuteur);
 		Article article = new Article(null, titre, description, image, date, idCategorie,idAuteur, categorie, auteur);
 		ArticleManager.getInstance().ajouterArticle(article);
+		
+		resp.sendRedirect("admin");
 }
 }

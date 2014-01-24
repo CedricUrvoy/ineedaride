@@ -44,24 +44,26 @@
 				<div class="bloc-commentaire">
 				  <p> Commentaires</p>	
 				</div>
-				<c:forEach var="commentaire" items="${commentaires}">
-					<div class="commentaire">
-						<h4 class="nom">${commentaire.name} </h4>
-						<h4>(${commentaire.email})  :</h4>
-						<p> ${commentaire.text}</p>
-					</div>
-				</c:forEach>
+				<ul id="listeCommentaires">
+					<c:forEach var="commentaire" items="${commentaires}">
+						<li class="commentaire">
+							<h4 class="nom">${commentaire.name} </h4>
+							<h4>(${commentaire.email})  :</h4>
+							<p> ${commentaire.text}</p>
+						</li>
+					</c:forEach>
+				</ul>
 			</div>
 			<div class="bloc-commentaire">
 				  <p> Ajouter un commentaire</p>	
 			</div>
-			<form action="ajoutercommentaire?id=${article.id}" method="post" id="formCommentaire">
+			<form  id="formCommentaire" method="post">
 	            <fieldset> 
 	            	<input  class="ajoutCommentaire" type="email" name="email" id="email" required placeholder="  Email" />
 	             	<input  class="ajoutCommentaire" type="text" name="name" id="name" required placeholder="  Nom" />
 	                <textarea class="ajoutCommentaire"  name="text" id="text" rows="10" cols="50" required placeholder="Message"></textarea>
-	            	<div>
-                    	<input id="boutonEnvoyer" type="submit" value="Envoyer" />
+	            	<div class=.ajoutComment id="${article.id}">
+                    	<input id="boutonEnvoyer" type="button" value="Envoyer"/>
 		            </div>
 	            </fieldset>
 		    </form>

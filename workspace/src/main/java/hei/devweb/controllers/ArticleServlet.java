@@ -33,6 +33,8 @@ public class ArticleServlet extends HttpServlet{
 		List<Commentaire> commentaires = CommentaireManager.getInstance().listerCommentaire(idArticle);
 		req.setAttribute("commentaires", commentaires);
 		
+		article.setNbrCommentaire(CommentaireManager.getInstance().compterCommentaire(article.getId()));
+		
 		RequestDispatcher view = req.getRequestDispatcher("WEB-INF/pages/article.jsp");
 		view.forward(req, resp);
 	}

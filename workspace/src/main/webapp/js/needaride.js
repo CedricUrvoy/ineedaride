@@ -1,89 +1,50 @@
 
 
-
-
-
-
-
 $(document).ready( function () {
 
-	// On cache le formulaire d'ajour d'article
-  $(".formAjouter").hide();    
+	/*** Fonction pour gerer l'affichage d'un ajout d'article ***/
+		  $(".formAjouter").hide();    
+
+		  $(".bloc-commentaire a").click( function () {
+			 if($('.formAjouter').is(":hidden")){
+				 $(".formAjouter").show();
+			 }else{
+				 $(".formAjouter").hide();   
+			 }
+			  event.preventDefault();
+		  });   
   
-  // On modifie l'évènement "click" sur les liens dans les items de liste
-  // qui portent la classe "toggleSubMenu" :
-  $(".bloc-commentaire a").click( function () {
-	 if($('.formAjouter').is(":hidden")){
-		 $(".formAjouter").show();
-	 }else{
-		 $(".formAjouter").hide();   
-	 }
-	  event.preventDefault();
-  });   
-  
-  
-  var $carrousel = $('#carrousel'), // on cible le bloc du carrousel
-  $img = $('#carrousel img'), // on cible les images contenues dans le carrousel
-  indexImg = $img.length - 1, // on définit l'index du dernier élément
-  i = 0, // on initialise un compteur
-  $currentImg = $img.eq(i); // enfin, on cible l'image courante, qui possède l'index i (0 pour l'instant)
+	/*** Fonction pour gerer le defilement du carrousel ***/
+  var  $img = $('#carrousel img'),indexImg = $img.length - 1, i = 0,$currentImg = $img.eq(i); 
 
-$img.css('display', 'none'); // on cache les images
-$currentImg.css('display', 'block'); // on affiche seulement l'image courante
-
-$carrousel.append('<div class="controls"> <span class="prev">Precedent</span> <span class="next">Suivant</span> </div>');
-
-$('.next').click(function(){ // image suivante
-
-  i++; // on incrémente le compteur
-
-  if( i <= indexImg ){
-      $img.css('display', 'none'); // on cache les images
-      $currentImg = $img.eq(i); // on définit la nouvelle image
-      $currentImg.css('display', 'block'); // puis on l'affiche
-  }
-  else{
-      i = indexImg;
-  }
-
-});
-
-$('.prev').click(function(){ // image précédente
-
-  i--; // on décrémente le compteur, puis on réalise la même chose que pour la fonction "suivante"
-
-  if( i >= 0 ){
-      $img.css('display', 'none');
-      $currentImg = $img.eq(i);
-      $currentImg.css('display', 'block');
-  }
-  else{
-      i = 0;
-  }
-
-});
+  $img.css('display', 'none');
+  $currentImg.css('display', 'block');
 
 function slideImg(){
-  setTimeout(function(){ // on utilise une fonction anonyme
-						
-      if(i < indexImg){ // si le compteur est inférieur au dernier index
-	    i++; // on l'incrémente
-	}
-	else{ // sinon, on le remet à 0 (première image)
-	    i = 0;
-	}
-
+  setTimeout(function(){				
+      if(i < indexImg){i++;
+      }else{ 
+		i = 0;}
 	$img.css('display', 'none');
-
 	$currentImg = $img.eq(i);
 	$currentImg.css('display', 'block');
-
-	slideImg(); // on oublie pas de relancer la fonction à la fin
-
-  }, 7000); // on définit l'intervalle à 7000 millisecondes (7s)
+	slideImg();
+  }, 5000);
 }
 
-slideImg(); // enfin, on lance la fonction une première fois
+slideImg();
+
+
+	/**** Fonction pour refresh apres un ajout ****/
+
+
+
+$("#boutonEnvoyer").click(function(event) {
+	var idArticle = (".ajoutComment").id;
+	 $.post("ajoutercommentaire?idArticle="+idArticle,{email:$("#email").val(),name:$("#name").val(),text:$("#text"),idArticle:idArticle}).done(function(data){
+	 $("#listeCommentaires").append('<li class="commentaire"><h4 class="nom">'+data.name+'</h4><h4>'+data.email+'  :</h4><p>'+ data.text+'</p></li>' );
+	 });
+	 event.preventDefault();
+	});
 
 });
-

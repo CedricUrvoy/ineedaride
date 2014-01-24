@@ -109,18 +109,6 @@ header{
 	width:100%;
 	max-height: 400px;
 }
-.controls{
-	text-align: center;
-	font-family: "bariol",Arial, sans-serif;
-	font-weight: normal;
-	font-style: normal;
-	font-size:1.5em;
-	margin-bottom:10px;
-	color:#44c0c2;
-}
-.controls:hover span{
-	cursor: pointer;
-}
 .textImage{
 	font-family: "bariol",Arial, sans-serif;
 	font-weight: bold;

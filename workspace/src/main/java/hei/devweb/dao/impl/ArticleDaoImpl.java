@@ -180,4 +180,42 @@ public class ArticleDaoImpl implements ArticleDao{
 		
 	}
 
+	public List<Article> listerDernierArticle() {
+		
+		List<Article> listeDernierArticle = new ArrayList<Article>();
+		try{
+			/**** Creation de la connexion ****/
+			Connection connection = DataSourceProvider.getDataSource().getConnection();
+			
+			/**** Utilisation de la connexion ****/
+			
+			PreparedStatement stmt = connection.prepareStatement("SELECT * FROM  t_article "
+					+ "INNER JOIN t_categorie ON CAT_ID = T_CATEGORIE_CAT_ID "
+					+ "INNER JOIN t_author ON T_AUTHOR_AUT_ID = AUT_ID "
+					+ "ORDER BY ART_DATE DESC"
+					+ "LIMIT 3");
+			ResultSet results = stmt.executeQuery();
+			while (results.next()){
+				Article article = new Article(
+						results.getInt("ART_ID"),  
+						results.getString("ART_TITLE"), 
+						results.getString("ART_DESCRIPTION"),
+						results.getString("ART_IMG"), 
+						results.getDate("ART_DATE"),
+						results.getInt("T_CATEGORIE_CAT_ID"),
+						results.getInt("T_AUTHOR_AUT_ID"),
+						results.getString("CAT_LIBELLE"),
+						results.getString("AUT_FIRSTNAME"));
+						listeDernierArticle.add(article);
+			}	
+			/**** Fermer la connexion ****/
+			
+			connection.close();
+	    
+		} catch (SQLException e) {
+	        e.printStackTrace();
+	    }
+		return listeDernierArticle;
+	}
+
 }

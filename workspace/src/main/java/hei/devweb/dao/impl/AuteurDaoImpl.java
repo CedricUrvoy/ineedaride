@@ -1,7 +1,6 @@
 package hei.devweb.dao.impl;
 
 import hei.devweb.dao.AuteurDao;
-import hei.devweb.model.Article;
 import hei.devweb.model.Auteur;
 
 import java.sql.Connection;

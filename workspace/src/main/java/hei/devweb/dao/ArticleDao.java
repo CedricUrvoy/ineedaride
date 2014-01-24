@@ -8,6 +8,8 @@ public interface ArticleDao {
 	
 	public List<Article> listerArticle();	
 	
+	public List<Article> listerDernierArticle();
+	
 	public List<Article> listerArticleCategorie(Integer idCategorie);
 	
 	public Article getArticle(Integer idArticle);

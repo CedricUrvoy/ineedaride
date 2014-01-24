@@ -36,6 +36,14 @@
 					</li>
 				</c:forEach>		
 		</div>
+		<div class="derniersArticles">
+			<c:forEach var="article" items="${articles}">
+					<li>
+						<a href="article?id=${article.id}">${article.title}</h3>
+			            <img src="${article.image}" alt="${article.title}" title="${article.title}"/>
+					</li>
+			</c:forEach>
+		</div>
 		<div class="contactGlobal" id="contact">
 			<h1>Contact</h1>
 			<div class="contact">

@@ -22,5 +22,7 @@ public class SupprimerArticleServlet extends HttpServlet{
 		
 		Integer idArticle = Integer.parseInt(req.getParameter("id"));
 		ArticleManager.getInstance().supprimerArticle(idArticle);
+		
+		resp.sendRedirect("admin");
 	}
 }
