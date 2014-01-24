@@ -21,7 +21,7 @@
 			<figcaption>Admin</figcaption>
 		</figure>
 		<div class="listeArticle">
-			<div class="bloc-commentaire"">
+			<div class="bloc-commentaire">
 				<p>Liste des articles</p>
 			</div>
 			<table class="tableau">
@@ -43,14 +43,14 @@
 					<td>${article.image}</td>
 					<td>${article.nameCategorie}</td>
 					<td>${article.nameAuthor}</td>
-					<td><a href="article?id=${article.id}#commentaires">${article.nbrCommentaire}</td>
+					<td><a href="article?id=${article.id}#commentaires">${article.nbrCommentaire}</a></td>
 					<td><a href="supprimerarticle?id=${article.id}" title="supprimer" >X</a></td>
 				</tr>
 				</c:forEach>
 			</table>
 		</div>
 		<div class="blocAjout">
-			<div class="bloc-commentaire"">
+			<div class="bloc-commentaire">
 				<a title="AjouterArticle" id="ajouterArticle">Ajouter un Article  +</a>
 			</div>
 				<form method="post" action="ajouterarticle" class="formAjouter">
@@ -75,7 +75,7 @@
 				</form>
 		</div>
 	<div class="listeAuteur">
-			<div class="bloc-commentaire"">
+			<div class="bloc-commentaire">
 				<p>Liste des auteurs</p>
 			</div>
 			<table class="tableau" id="tableauAuteur">
@@ -96,7 +96,7 @@
 			</table>
 		</div>
 		<div class="listeCategorie">
-			<div class="bloc-commentaire"">
+			<div class="bloc-commentaire">
 				<p>Liste des categories</p>
 			</div>
 			<table class="tableau">

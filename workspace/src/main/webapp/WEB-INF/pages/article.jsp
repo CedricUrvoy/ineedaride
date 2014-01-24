@@ -62,7 +62,7 @@
 	            	<input  class="ajoutCommentaire" type="email" name="email" id="email" required placeholder="  Email" />
 	             	<input  class="ajoutCommentaire" type="text" name="name" id="name" required placeholder="  Nom" />
 	                <textarea class="ajoutCommentaire"  name="text" id="text" rows="10" cols="50" required placeholder="Message"></textarea>
-	            	<div class=.ajoutComment id="${article.id}">
+	            	<div class="ajoutComment" id="${article.id}">
                     	<input id="boutonEnvoyer" type="button" value="Envoyer"/>
 		            </div>
 	            </fieldset>

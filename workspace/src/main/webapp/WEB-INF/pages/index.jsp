@@ -34,12 +34,13 @@
 						<p>${categorie.text}</p>
 						<a href="blog?idCategorie=${categorie.id}">Voir ce	Blog </a>		
 					</li>
-				</c:forEach>		
+				</c:forEach>	
+			</ul>	
 		</div>
 		<div class="derniersArticles">
 			<c:forEach var="article" items="${articles}">
 					<li>
-						<a href="article?id=${article.id}">${article.title}</h3>
+						<a href="article?id=${article.id}">${article.title}</a>
 			            <img src="${article.image}" alt="${article.title}" title="${article.title}"/>
 					</li>
 			</c:forEach>

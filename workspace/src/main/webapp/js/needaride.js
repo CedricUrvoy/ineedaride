@@ -40,8 +40,13 @@ slideImg();
 
 
 $("#boutonEnvoyer").click(function(event) {
-	var idArticle = (".ajoutComment").id;
-	 $.post("ajoutercommentaire?idArticle="+idArticle,{email:$("#email").val(),name:$("#name").val(),text:$("#text"),idArticle:idArticle}).done(function(data){
+	var idArticle = $(".ajoutComment").attr("id");
+	 $.post("ajoutercommentaire",{
+		 email:$("#email").val(),
+		 name:$("#name").val(),
+		 text:$("#text").val(),
+		 idArticle:idArticle
+		 }).done(function(data){
 	 $("#listeCommentaires").append('<li class="commentaire"><h4 class="nom">'+data.name+'</h4><h4>'+data.email+'  :</h4><p>'+ data.text+'</p></li>' );
 	 });
 	 event.preventDefault();
