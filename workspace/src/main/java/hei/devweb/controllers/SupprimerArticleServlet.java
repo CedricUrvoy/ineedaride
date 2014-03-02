@@ -17,10 +17,10 @@ public class SupprimerArticleServlet extends HttpServlet{
 	private static final long serialVersionUID = 857241270489543614L;
 	
 	@Override
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 		
-		Integer idArticle = Integer.parseInt(req.getParameter("id"));
+		Integer idArticle = Integer.parseInt(req.getParameter("idArticle"));
 		ArticleManager.getInstance().supprimerArticle(idArticle);
 		
 		resp.sendRedirect("admin");
