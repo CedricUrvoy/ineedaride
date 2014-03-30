@@ -24,7 +24,7 @@
 			<div class="bloc-commentaire">
 				<p>Liste des articles</p>
 			</div>
-			<table class="tableau" id="infosArticle">
+			<table class="tableau">
 				<tr class="entete">
 						<th>Id Article</th>
 						<th>Titre Article</th>
@@ -37,15 +37,14 @@
 				</tr>
 				<c:forEach var="article" items="${articles}">
 				<tr class="ligne">
-					<td class="idArticle" id="${article.id}">${article.id}</td>
+					<td>${article.id}</td>
 					<td>${article.title}</td>
 					<td><fmt:formatDate value="${article.date}" pattern="dd/MM/yy"/></td>
 					<td>${article.image}</td>
 					<td>${article.nameCategorie}</td>
 					<td>${article.nameAuthor}</td>
-					<td><a href="article?idArticle=${article.id}#commentaires">${article.nbrCommentaire}</a></td>
-					<td><input id="${article.id}" class="boutonSupprimer" type="button" value="X" 	onclick=""/></td>
-					
+					<td><a href="article?id=${article.id}#commentaires">${article.nbrCommentaire}</a></td>
+					<td><a href="supprimerarticle?id=${article.id}" title="supprimer" >X</a></td>
 				</tr>
 				</c:forEach>
 			</table>
@@ -71,7 +70,7 @@
 				      	</c:forEach>
    					</select>
                     <div>
-                    	<input id="boutonAjouterArticle" type="submit" value="Ajouter l'article" />
+                    	<input id="boutonEnvoyer" type="submit" value="Ajouter l'article" />
                     </div>
 				</form>
 		</div>

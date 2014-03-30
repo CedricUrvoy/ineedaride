@@ -28,22 +28,19 @@ public class AdminServlet extends HttpServlet{
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 		
-			List<Categorie> categories = CategorieManager.getInstance().listerCategorie();
-			req.setAttribute("categories", categories);	
-			List<Article> articles = ArticleManager.getInstance().listerArticle();
-			req.setAttribute("articles", articles);
-			for (int i = 0; i < articles.size(); i++) {
-				articles.get(i).setNbrCommentaire(CommentaireManager.getInstance().compterCommentaire(articles.get(i).getId()));
-				System.out.println(CommentaireManager.getInstance().compterCommentaire(articles.get(i).getId()));
-			}
-			List<Auteur> auteurs = AuteurManager.getInstance().listerAuteur();
-			req.setAttribute("auteurs", auteurs);
-			
-		RequestDispatcher view = req.getRequestDispatcher("WEB-INF/pages/admin.jsp");
-		view.forward(req, resp);
-			
+		List<Categorie> categories = CategorieManager.getInstance().listerCategorie();
+		req.setAttribute("categories", categories);	
+		List<Article> articles = ArticleManager.getInstance().listerArticle();
+		req.setAttribute("articles", articles);
+		for (int i = 0; i < articles.size(); i++) {
+			articles.get(i).setNbrCommentaire(CommentaireManager.getInstance().compterCommentaire(articles.get(i).getId()));
+			System.out.println(CommentaireManager.getInstance().compterCommentaire(articles.get(i).getId()));
+		}
+		List<Auteur> auteurs = AuteurManager.getInstance().listerAuteur();
+		req.setAttribute("auteurs", auteurs);
 		
-		
+	RequestDispatcher view = req.getRequestDispatcher("WEB-INF/pages/admin.jsp");
+	view.forward(req, resp);
 	}
 }
 

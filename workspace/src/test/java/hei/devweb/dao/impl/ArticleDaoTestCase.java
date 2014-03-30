@@ -31,9 +31,9 @@ public class ArticleDaoTestCase {
 		stmt.executeUpdate("INSERT INTO `t_author`(`AUT_ID`,`AUT_FIRSTNAME`,`AUT_SURNAME`,`AUT_INFOS`)"
 				+ "VALUES(2,'fistname2','surname2','infos2')");
 		stmt.executeUpdate("INSERT INTO `t_categorie`(`CAT_ID`,`CAT_LIBELLE`,`CAT_IMG_CAR`,`CAT_IMG_CAT`,`CAT_IMG_BLOG`,`CAT_DESCRIPTION`) "
-				+ "VALUES (1,'libelle','imgCar','imgCat','imgBlog','description')");
+				+ "VALUES (1,'libelle','imgCar','imageCat','imageBlog','description')");
 		stmt.executeUpdate("INSERT INTO `t_categorie`(`CAT_ID`,`CAT_LIBELLE`,`CAT_IMG_CAR`,`CAT_IMG_CAT`,`CAT_IMG_BLOG`,`CAT_DESCRIPTION`) "
-				+ "VALUES (2,'libelle2','imgCar2','imgCat2','imgBlog2','description2')");
+				+ "VALUES (2,'libelle2','imgCar2','imageCat2','imageBlog2','description2')");
 		stmt.executeUpdate("INSERT INTO `t_article`(`ART_ID`,`ART_TITLE`,`ART_DESCRIPTION`,`ART_DATE`,`ART_IMG`,`T_CATEGORIE_CAT_ID`,`T_AUTHOR_AUT_ID`) "
 				+ "VALUES (1,'titre','description','2014-01-01','image',1,1)");
 		stmt.executeUpdate("INSERT INTO `t_article`(`ART_ID`,`ART_TITLE`,`ART_DESCRIPTION`,`ART_DATE`,`ART_IMG`,`T_CATEGORIE_CAT_ID`,`T_AUTHOR_AUT_ID`) "
